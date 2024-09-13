@@ -1,5 +1,8 @@
 # 🏡 Hamada's Homelab - A Comprehensive Docker-Powered Infrastructure
 ---
+![image](https://github.com/user-attachments/assets/60fada42-5db6-4a97-9867-20a364229572)
+
+
 
 ## 📋 Overview
 
