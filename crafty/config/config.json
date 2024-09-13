@@ -1,0 +1,25 @@
+{
+    "allow_nsfw_profile_pictures": false,
+    "big_bucket_repo": "https://jars.arcadiatech.org",
+    "cookie_expire": 30,
+    "crafty_logs_delete_after_days": 0,
+    "delete_default_json": false,
+    "dir_size_poll_freq_minutes": 5,
+    "disabled_language_files": [],
+    "enable_user_self_delete": false,
+    "history_max_age": 7,
+    "https_port": 8443,
+    "keywords": [
+        "help",
+        "chunk"
+    ],
+    "language": "en_EN",
+    "max_audit_entries": 300,
+    "max_log_lines": 700,
+    "monitored_mounts": "/crafty/servers",
+    "reset_secrets_on_next_boot": false,
+    "show_contribute_link": true,
+    "show_errors": true,
+    "stats_update_frequency_seconds": 30,
+    "virtual_terminal_lines": 70
+}

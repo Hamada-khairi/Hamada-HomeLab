@@ -1,0 +1,265 @@
+2024-08-28 08:45:48,162 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 08:45:48,164 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 08:45:48,171 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210813111015_init"
+2024-08-28 08:45:48,180 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210813111015_init"
+2024-08-28 08:45:48,182 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210819155737_permissions"
+2024-08-28 08:45:48,190 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210819155737_permissions"
+2024-08-28 08:45:48,192 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210822092240_crafty_permissions"
+2024-08-28 08:45:48,194 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210822092240_crafty_permissions"
+2024-08-28 08:45:48,200 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210822101530_delete_User_Servers"
+2024-08-28 08:45:48,201 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210822101530_delete_User_Servers"
+2024-08-28 08:45:48,202 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210824205501_permissions_limits_1"
+2024-08-28 08:45:48,213 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210824205501_permissions_limits_1"
+2024-08-28 08:45:48,215 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_backup_schedule"
+2024-08-28 08:45:48,218 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_backup_schedule"
+2024-08-28 08:45:48,220 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_crash"
+2024-08-28 08:45:48,225 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_crash"
+2024-08-28 08:45:48,226 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_cron_task"
+2024-08-28 08:45:48,230 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_cron_task"
+2024-08-28 08:45:48,232 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_first_run_"
+2024-08-28 08:45:48,235 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_first_run_"
+2024-08-28 08:45:48,237 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_one_time_task"
+2024-08-28 08:45:48,241 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_one_time_task"
+2024-08-28 08:45:48,244 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_server_type"
+2024-08-28 08:45:48,248 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_server_type"
+2024-08-28 08:45:48,249 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_user_email"
+2024-08-28 08:45:48,254 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_user_email"
+2024-08-28 08:45:48,256 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_users_log_path"
+2024-08-28 08:45:48,260 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_users_log_path"
+2024-08-28 08:45:48,261 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_waiting_start_1"
+2024-08-28 08:45:48,264 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_waiting_start_1"
+2024-08-28 08:45:48,265 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210915205501_waiting_start_1 copy"
+2024-08-28 08:45:48,267 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210915205501_waiting_start_1 copy"
+2024-08-28 08:45:48,269 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20210929205501_user_lang"
+2024-08-28 08:45:48,275 - [Crafty] - INFO     - app.classes.shared.migration - Done "20210929205501_user_lang"
+2024-08-28 08:45:48,276 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20211120221511_api_keys"
+2024-08-28 08:45:48,281 - [Crafty] - INFO     - app.classes.shared.migration - Done "20211120221511_api_keys"
+2024-08-28 08:45:48,282 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20211121233959_multi_api_keys"
+2024-08-28 08:45:48,284 - [Crafty] - INFO     - app.classes.shared.migration - Done "20211121233959_multi_api_keys"
+2024-08-28 08:45:48,285 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220223_ignored_exits"
+2024-08-28 08:45:48,289 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220223_ignored_exits"
+2024-08-28 08:45:48,291 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220223_schedule_reaction"
+2024-08-28 08:45:48,295 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220223_schedule_reaction"
+2024-08-28 08:45:48,296 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220226_server_order"
+2024-08-28 08:45:48,299 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220226_server_order"
+2024-08-28 08:45:48,300 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220226_server_order copy"
+2024-08-28 08:45:48,302 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220226_server_order copy"
+2024-08-28 08:45:48,303 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220227162446_backup_options"
+2024-08-28 08:45:48,307 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220227162446_backup_options"
+2024-08-28 08:45:48,308 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220302_compress_backups"
+2024-08-28 08:45:48,313 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220302_compress_backups"
+2024-08-28 08:45:48,314 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220303_downloading"
+2024-08-28 08:45:48,318 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220303_downloading"
+2024-08-28 08:45:48,319 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220312_support_log_status"
+2024-08-28 08:45:48,324 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220312_support_log_status"
+2024-08-28 08:45:48,325 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220618_crafty_api_secret"
+2024-08-28 08:45:48,327 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220618_crafty_api_secret"
+2024-08-28 08:45:48,328 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220620_backup_shutdown"
+2024-08-28 08:45:48,331 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220620_backup_shutdown"
+2024-08-28 08:45:48,333 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220804_schedule_next_run"
+2024-08-28 08:45:48,337 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220804_schedule_next_run"
+2024-08-28 08:45:48,339 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220805_schedule_rename_comment"
+2024-08-28 08:45:48,343 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220805_schedule_rename_comment"
+2024-08-28 08:45:48,345 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220819_role_manager"
+2024-08-28 08:45:48,347 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220819_role_manager"
+2024-08-28 08:45:48,348 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220819_user_manager"
+2024-08-28 08:45:48,349 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220819_user_manager"
+2024-08-28 08:45:48,350 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220820_quota"
+2024-08-28 08:45:48,354 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220820_quota"
+2024-08-28 08:45:48,356 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220820_user_crafty"
+2024-08-28 08:45:48,365 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220820_user_crafty"
+2024-08-28 08:45:48,366 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220821_shutdown_timeout"
+2024-08-28 08:45:48,371 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220821_shutdown_timeout"
+2024-08-28 08:45:48,373 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220912_user_pfp"
+2024-08-28 08:45:48,390 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220912_user_pfp"
+2024-08-28 08:45:48,402 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20220926_user_theme"
+2024-08-28 08:45:48,409 - [Crafty] - INFO     - app.classes.shared.migration - Done "20220926_user_theme"
+2024-08-28 08:45:48,420 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20221109_login_photo"
+2024-08-28 08:45:48,425 - [Crafty] - INFO     - app.classes.shared.migration - Done "20221109_login_photo"
+2024-08-28 08:45:48,434 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230111_adding_login_opacity"
+2024-08-28 08:45:48,439 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230111_adding_login_opacity"
+2024-08-28 08:45:48,442 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230119_command_drop"
+2024-08-28 08:45:48,444 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230119_command_drop"
+2024-08-28 08:45:48,458 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230120_backup_command"
+2024-08-28 08:45:48,465 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230120_backup_command"
+2024-08-28 08:45:48,467 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230126_master_server"
+2024-08-28 08:45:48,471 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230126_master_server"
+2024-08-28 08:45:48,473 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230129_secrets_shh"
+2024-08-28 08:45:48,477 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230129_secrets_shh"
+2024-08-28 08:45:48,478 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230603_webhooks"
+2024-08-28 08:45:48,508 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230603_webhooks"
+2024-08-28 08:45:48,510 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20230901_user_notif"
+2024-08-28 08:45:48,514 - [Crafty] - INFO     - app.classes.shared.migration - Done "20230901_user_notif"
+2024-08-28 08:45:48,516 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20231229_player_count"
+2024-08-28 08:45:48,519 - [Crafty] - INFO     - app.classes.shared.migration - Done "20231229_player_count"
+2024-08-28 08:45:48,521 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240216_rework_servers_uuid"
+2024-08-28 08:45:48,529 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240216_rework_servers_uuid"
+2024-08-28 08:45:48,532 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240217_rework_servers_uuid_part2"
+2024-08-28 08:45:48,538 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240217_rework_servers_uuid_part2"
+2024-08-28 08:45:48,542 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240308_multi-backup"
+2024-08-28 08:45:48,569 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240308_multi-backup"
+2024-08-28 08:45:48,572 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240310_fixing_rework_servers_uuid"
+2024-08-28 08:45:48,581 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240310_fixing_rework_servers_uuid"
+2024-08-28 08:45:48,583 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240317_apikey_full_access"
+2024-08-28 08:45:48,586 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240317_apikey_full_access"
+2024-08-28 08:45:48,587 - [Crafty] - INFO     - app.classes.shared.migration - Migrate "20240420_audit_log_drop"
+2024-08-28 08:45:48,590 - [Crafty] - INFO     - app.classes.shared.migration - Done "20240420_audit_log_drop"
+2024-08-28 08:45:48,592 - [Crafty] - INFO     - app.classes.shared.main_models - Fresh Install Detected - Creating Default Settings
+2024-08-28 08:45:53,980 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 08:45:53,982 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 08:45:53,982 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 08:45:53,982 - [Crafty] - INFO     - app.classes.shared.helpers - Generating a self signed SSL
+2024-08-28 08:45:53,982 - [Crafty] - INFO     - app.classes.shared.helpers - Generating a key pair. This might take a moment.
+2024-08-28 08:45:54,407 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 08:45:54,418 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 08:45:56,506 - [Crafty] - ERROR    - app.classes.shared.helpers - /crafty/app/config/bigbucket.json does not exist
+2024-08-28 08:45:56,506 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:45:57,997 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 08:45:59,999 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 08:45:59,999 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:46:00,912 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:46:00,912 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Automatic cache refresh initiated due to old cache.
+2024-08-28 08:46:00,913 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:46:04,331 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:46:05,176 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 08:46:05,177 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 08:46:05,270 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:46:08,675 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 08:46:08,675 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 08:46:09,600 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 08:46:14,346 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 08:47:25,607 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 08:47:25,609 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 08:47:25,614 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 08:47:25,614 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 08:47:25,615 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads
+2024-08-28 08:52:19,311 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 08:52:19,314 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 08:52:19,338 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 08:52:19,401 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 08:52:19,401 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 08:52:19,402 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 08:52:19,404 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 08:52:19,412 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 08:52:19,464 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 08:52:21,940 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:52:23,429 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 08:52:25,432 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 08:52:25,433 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:52:25,437 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 08:52:25,437 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 08:52:26,281 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:52:26,281 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 08:52:29,775 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:52:34,129 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 08:52:34,129 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 08:52:38,840 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 08:52:44,096 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 08:52:44,097 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 08:52:44,098 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 08:52:44,099 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 08:52:44,100 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads
+2024-08-28 08:53:11,139 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 08:53:11,148 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 08:53:11,159 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 08:53:11,250 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 08:53:11,256 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 08:53:11,256 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 08:53:11,256 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 08:53:11,257 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 08:53:11,290 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 08:53:13,822 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:53:15,286 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 08:53:17,289 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 08:53:17,289 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:53:17,292 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 08:53:17,292 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 08:53:18,179 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:53:18,180 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 08:53:21,625 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:53:26,677 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 08:53:26,679 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 08:53:31,414 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 08:54:23,771 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 08:54:23,772 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 08:54:23,772 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 08:54:23,773 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 08:54:23,775 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads
+2024-08-28 08:54:51,324 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 08:54:51,326 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 08:54:51,380 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 08:54:51,535 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 08:54:51,543 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 08:54:51,545 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 08:54:51,549 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 08:54:51,559 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 08:54:51,626 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 08:54:54,126 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:54:55,585 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 08:54:57,589 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 08:54:57,591 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 08:54:57,593 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 08:54:57,593 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 08:54:58,536 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:54:58,536 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 08:55:01,952 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 08:55:06,329 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 08:55:06,330 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 08:55:10,941 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 09:01:38,064 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 09:01:38,066 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 09:01:38,067 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 09:01:38,067 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 09:01:38,085 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads
+2024-08-28 09:02:25,929 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 09:02:25,932 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 09:02:25,956 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 09:02:26,048 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 09:02:26,048 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 09:02:26,048 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 09:02:26,050 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 09:02:26,061 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 09:02:26,132 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 09:02:28,614 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:02:30,091 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 09:02:32,095 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 09:02:32,096 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:02:32,101 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 09:02:32,103 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 09:02:32,980 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:02:32,981 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 09:02:36,456 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:02:40,824 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 09:02:40,825 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 09:02:45,319 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 09:06:03,082 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 09:06:03,082 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 09:06:03,082 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 09:06:03,082 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 09:06:03,083 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads
+2024-08-28 09:07:25,704 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 09:07:25,726 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 09:07:25,745 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 09:07:25,923 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 09:07:25,960 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 09:07:28,496 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:07:29,965 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 09:07:31,971 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 09:07:32,863 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:07:32,864 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 09:07:36,316 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:07:40,798 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 09:07:40,799 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 09:07:45,298 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 09:09:47,031 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 09:09:47,034 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads

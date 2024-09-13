@@ -1,0 +1,1237 @@
+{
+    "last_refreshed": "08/28/2024, 09:07:36",
+    "categories": {
+        "mc_java_servers": {
+            "enabled": true,
+            "friendly_name": "Minecraft Servers",
+            "types": {
+                "vanilla": {
+                    "versions": {
+                        "1.21.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.21.1/vanilla.jar"
+                            ],
+                            "sha256": "e3bc55693e93cda0188f2e60aea28113fc647c5e85a15fa3d1b347349231b4bb"
+                        },
+                        "1.21": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.21/vanilla.jar"
+                            ],
+                            "sha256": "c96394da86f9d9f9ef7ca2d2ee1f2f0980c29b7aa5c94b43c02c50435dbcf53f"
+                        },
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.6/vanilla.jar"
+                            ],
+                            "sha256": "c6d01d018ca782e506f0ec60652d47fd565078be9122b625c1681bc86c29c7ec"
+                        },
+                        "1.20.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.5/vanilla.jar"
+                            ],
+                            "sha256": "f8f6a38fededc12d6bbac21e5341c168a7c9bf4ef90193fcf0abcc1366c42bac"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.4/vanilla.jar"
+                            ],
+                            "sha256": "c03fa6f39daa69ddf413c965a3a83084db746a7a138ce535a693293b5472d363"
+                        },
+                        "1.20.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.3/vanilla.jar"
+                            ],
+                            "sha256": "36ed89be93f182034df0678bce957b5442f0c6905f41e94ff6a0521b2e138bae"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.2/vanilla.jar"
+                            ],
+                            "sha256": "1daee4838569ad46e41f0a6f459684c500c7f2685356a40cfb7e838d6e78eae8"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20.1/vanilla.jar"
+                            ],
+                            "sha256": "3af73a9dc5a102e38147946360dd27d4d70bae7055bf91cf2151cd5d121b79e0"
+                        },
+                        "1.20": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.20/vanilla.jar"
+                            ],
+                            "sha256": "ff41c542cec182ce74508a5e42194e0f4009341de75f0a7bf770d18cf701d56b"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.19.4/vanilla.jar"
+                            ],
+                            "sha256": "a524a10da550741785c8c3a0fb39047f106b0c7c2cfa255e8278cb6f1abe3f53"
+                        },
+                        "1.19.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.19.3/vanilla.jar"
+                            ],
+                            "sha256": "4ebd3ad142512953d0193ae3a1d1a30c896907de7c68780977151f6cc79f1e1b"
+                        },
+                        "1.19.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.19.2/vanilla.jar"
+                            ],
+                            "sha256": "b26727069ef5f61c704add9a378ac90e3d271fd7876c0bd3dcfbe9fd0bec4d96"
+                        },
+                        "1.19.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.19.1/vanilla.jar"
+                            ],
+                            "sha256": "f15b93c25ac7343ae8db6e7883a97f11777baaee924e7a3c7aeed826b155b233"
+                        },
+                        "1.19": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.19/vanilla.jar"
+                            ],
+                            "sha256": "deefd056f0cf89c3d7fd48d03f56a8a73943586e8c061fdabd0fd92d32ced2b2"
+                        },
+                        "1.18.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.18.2/vanilla.jar"
+                            ],
+                            "sha256": "57be9d1e35aa91cfdfa246adb63a0ea11a946081e0464d08bc3d36651718a343"
+                        },
+                        "1.18.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.18.1/vanilla.jar"
+                            ],
+                            "sha256": "ebcd120ad81480b968a548df6ffb83b88075e95195c8ff63d461c9df4df5dbdf"
+                        },
+                        "1.18": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.18/vanilla.jar"
+                            ],
+                            "sha256": "8417edceb471b38a59a6ce260f3aa1479e95264a38eb56283bdf24ec98647e6f"
+                        },
+                        "1.17.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.17.1/vanilla.jar"
+                            ],
+                            "sha256": "e8c211b41317a9f5a780c98a89592ecb72eb39a6e475d4ac9657e5bc9ffaf55f"
+                        },
+                        "1.17": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.17/vanilla.jar"
+                            ],
+                            "sha256": "7b390d8d9f6b5649b226d82686aec7f11bd9aa4430bb5cac9072ffd32f3c1f4b"
+                        },
+                        "1.16.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16.5/vanilla.jar"
+                            ],
+                            "sha256": "58f329c7d2696526f948470aa6fd0b45545039b64cb75015e64c12194b373da6"
+                        },
+                        "1.16.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16.4/vanilla.jar"
+                            ],
+                            "sha256": "444d30d903a1ef489b6737bb9d021494faf23434ca8568fd72ce2e3d40b32506"
+                        },
+                        "1.16.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16.3/vanilla.jar"
+                            ],
+                            "sha256": "32e450e74c081aec06dcfbadfa5ba9aa1c7f370bd869e658caec0c3004f7ad5b"
+                        },
+                        "1.16.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16.2/vanilla.jar"
+                            ],
+                            "sha256": "2902ed3ff84e4f810a2c0620c6b6df9c3ef8488b272c61274d5eac2433876f39"
+                        },
+                        "1.16.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16.1/vanilla.jar"
+                            ],
+                            "sha256": "2782d547724bc3ffc0ef6e97b2790e75c1df89241f9d4645b58c706f5e6c935b"
+                        },
+                        "1.16": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.16/vanilla.jar"
+                            ],
+                            "sha256": "7d2d2d127b90baf2bd8fc61092cbff42bea1bdfae30a2838f45edb31294979b9"
+                        },
+                        "1.15.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.15.2/vanilla.jar"
+                            ],
+                            "sha256": "80cf86dc2004ec6a2dc0183d1c75a9af3ba0669f7c332e4247afb1d76fb67e8a"
+                        },
+                        "1.15.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.15.1/vanilla.jar"
+                            ],
+                            "sha256": "a0c062686bee5a92d60802ca74d198548481802193a70dda6d5fe7ecb7207993"
+                        },
+                        "1.15": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.15/vanilla.jar"
+                            ],
+                            "sha256": "e0fe1749263b5ec211b358b598b46e787645bffa8411414f0c812a92bdc70c84"
+                        },
+                        "1.14.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.14.4/vanilla.jar"
+                            ],
+                            "sha256": "5ecdedab3a6e129321a444490d0a467c25ea702a24a99cebe3b6aed41f8f5729"
+                        },
+                        "1.14.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.14.3/vanilla.jar"
+                            ],
+                            "sha256": "942256f0bfec40f2331b1b0c55d7a683b86ee40e51fa500a2aa76cf1f1041b38"
+                        },
+                        "1.14.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.14.2/vanilla.jar"
+                            ],
+                            "sha256": "b47fd85155ae77c2bc59e62a215310c4dce87c7dfdf7588385973fa20ff4655b"
+                        },
+                        "1.14.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.14.1/vanilla.jar"
+                            ],
+                            "sha256": "f822f0b730b7e1f05fca84248a6873400bac4ca449ff6762a55cab3d68b1f03e"
+                        },
+                        "1.14": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.14/vanilla.jar"
+                            ],
+                            "sha256": "671e3d334dd601c520bf1aeb96e49038145172bef16bc6c418e969fd8bf8ff6c"
+                        },
+                        "1.13.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.13.2/vanilla.jar"
+                            ],
+                            "sha256": "ffd3aa2c25c5ba68a706b59f2abdc69ac1748e115ca9d3b47941e197736f088e"
+                        },
+                        "1.13.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.13.1/vanilla.jar"
+                            ],
+                            "sha256": "2ea6047e7651c429228340acd7d1e35f4f6c7af42f59f92b0b1cd476561253d1"
+                        },
+                        "1.13": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.13/vanilla.jar"
+                            ],
+                            "sha256": "e76f3927904d331c969a2c437d5661ac02f24be86062dd1c607bfd4ebdc550b9"
+                        },
+                        "1.12.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.12.2/vanilla.jar"
+                            ],
+                            "sha256": "fe1f9274e6dad9191bf6e6e8e36ee6ebc737f373603df0946aafcded0d53167e"
+                        },
+                        "1.12.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.12.1/vanilla.jar"
+                            ],
+                            "sha256": "848912640bccfa7ea34a2cc1c76cb2b35f8467c4216d9603917c991660f91a8b"
+                        },
+                        "1.12": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.12/vanilla.jar"
+                            ],
+                            "sha256": "feebff3834e41cc096522525707d2dd27adc2431b1f3145b9d0ccfc4c8a3dc09"
+                        },
+                        "1.11.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.11.2/vanilla.jar"
+                            ],
+                            "sha256": "dec47d36b429fd05076b90b1f42c2a25138bc39204aa51b9674ef2a98d64d88a"
+                        },
+                        "1.11.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.11.1/vanilla.jar"
+                            ],
+                            "sha256": "8002bc32fdba21bf73fa30d94524b0c823bf7256e9c71598d2f18fb319e72c98"
+                        },
+                        "1.11": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.11/vanilla.jar"
+                            ],
+                            "sha256": "3277965fd83d26944dfbd1b9740d95cf206985da330a1b3733868e4de7dc6f83"
+                        },
+                        "1.10.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.10.2/vanilla.jar"
+                            ],
+                            "sha256": "195f468227c5f9218f3919538b9b16ba34adced67fc7d7b652c508a5e8d07a21"
+                        },
+                        "1.10.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.10.1/vanilla.jar"
+                            ],
+                            "sha256": "623c8d67e7357c7078f30cee450562c52a05a42c394f064474c7f2d45b4a7d3f"
+                        },
+                        "1.10": {
+                            "url": [
+                                "https://jars.arcadiatech.org/vanilla/1.10/vanilla.jar"
+                            ],
+                            "sha256": "dd44a72e920a01dedf57507b73642f4a9dd8c6052e1f42ff6cc0635008014201"
+                        }
+                    }
+                },
+                "paper": {
+                    "versions": {
+                        "1.21.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.21.1/paper.jar"
+                            ],
+                            "sha256": "a5d4b979808d889c5fa5512142cc903224d5dacb15ca17c1665e2833acd4468b"
+                        },
+                        "1.21": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.21/paper.jar"
+                            ],
+                            "sha256": "ab9bb1afc3cea6978a0c03ce8448aa654fe8a9c4dddf341e7cbda1b0edaa73f5"
+                        },
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20.6/paper.jar"
+                            ],
+                            "sha256": "84e14605acc369bf66a0bc09cb2d70c329ac2c6cde1d985c465b974877cc2ba3"
+                        },
+                        "1.20.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20.5/paper.jar"
+                            ],
+                            "sha256": "3cd7da2f8df92e082a501a39c674aab3c0343edd179b86f5baccaebfc9974132"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20.4/paper.jar"
+                            ],
+                            "sha256": "78209e108182b893ced65daa1fc593b45d3115900f0498d3e8152a7d73d38392"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20.2/paper.jar"
+                            ],
+                            "sha256": "ba340a835ac40b8563aa7eda1cd6479a11a7623409c89a2c35cd9d7490ed17a7"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20.1/paper.jar"
+                            ],
+                            "sha256": "234a9b32098100c6fc116664d64e36ccdb58b5b649af0f80bcccb08b0255eaea"
+                        },
+                        "1.20": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.20/paper.jar"
+                            ],
+                            "sha256": "1e4ccfc0599f491ee6fee4455d3722332ac5d78584fccd55cbb3b51e11504505"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.19.4/paper.jar"
+                            ],
+                            "sha256": "e587d78cba3e99ef8c4bc24cf20cc3bdbbe89e33b0b572070446af4eb6be5ccf"
+                        },
+                        "1.19.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.19.3/paper.jar"
+                            ],
+                            "sha256": "3007f2c638d5f04ed32b6adaa33053fe3634ccfa74345c83d3ea4982d38db5dc"
+                        },
+                        "1.19.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.19.2/paper.jar"
+                            ],
+                            "sha256": "2eb5c7459ec94bcdc597ed711d549a3ab4b0fda13e412a0792a1a069b5903864"
+                        },
+                        "1.19.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.19.1/paper.jar"
+                            ],
+                            "sha256": "5afe23a1fade92c547124fa874bc7d908fa676f49f09879fa876224b62e9d51b"
+                        },
+                        "1.19": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.19/paper.jar"
+                            ],
+                            "sha256": "0d39cacc51a77b2b071e1ce862fcbf0b4a4bd668cc7e8b313598d84fa09fabac"
+                        },
+                        "1.18.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.18.2/paper.jar"
+                            ],
+                            "sha256": "0578f18f4d632b494b468ec56b3b414b5b56fea087ee7d39cf6dcdf4c9d01f05"
+                        },
+                        "1.18.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.18.1/paper.jar"
+                            ],
+                            "sha256": "a94917a4472c2cbc9907a15c666bbb784f95ecd7b53c77bc08fe71103e5487f5"
+                        },
+                        "1.18": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.18/paper.jar"
+                            ],
+                            "sha256": "3c995f20dae4e4e21d5554fac957a0a8a5c85bd5bf34915fac4b4f16e0ef101b"
+                        },
+                        "1.17.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.17.1/paper.jar"
+                            ],
+                            "sha256": "6cc1ee2f94253ce10b5374ed85fffc735a97d8f1b64db293683dfa24dd3cc05f"
+                        },
+                        "1.17": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.17/paper.jar"
+                            ],
+                            "sha256": "760a93b94a58d619bd647d71af84688617d0444d22b716500bc6b343858dc871"
+                        },
+                        "1.16.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.16.5/paper.jar"
+                            ],
+                            "sha256": "e67da4851d08cde378ab2b89be58849238c303351ed2482181a99c2c2b489276"
+                        },
+                        "1.16.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.16.4/paper.jar"
+                            ],
+                            "sha256": "963268ed564ac7d2ec076463e921ffa09570235f587bbd1a4d91a23ca4264b66"
+                        },
+                        "1.16.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.16.3/paper.jar"
+                            ],
+                            "sha256": "940303ee5f5bcc08377e388ea1c1daa109c1ac8c4d189dc67de1106853f2fc23"
+                        },
+                        "1.16.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.16.2/paper.jar"
+                            ],
+                            "sha256": "e5e10517daaa9bd6d54a8a0d22d866e31da7c1b47cb9e425ffaac236fde75ec9"
+                        },
+                        "1.16.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.16.1/paper.jar"
+                            ],
+                            "sha256": "929559ba1dfc6de2904e17289fb3d1ac95f0ab48c7540cf5b8c2f055fea9d59c"
+                        },
+                        "1.15.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.15.2/paper.jar"
+                            ],
+                            "sha256": "bd2dd6f2cc489cf9e2bb800cb4fb6d63e9d293945d3ac10b09dd9c6098fa9f34"
+                        },
+                        "1.15.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.15.1/paper.jar"
+                            ],
+                            "sha256": "22a7a19f378db8edf92cdba57d91ceea7e4fa6470b677e6bbe57e8f7e1d9a4dd"
+                        },
+                        "1.15": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.15/paper.jar"
+                            ],
+                            "sha256": "8b726c0deb6c3a265d679a3d3a2c0f8e5243fbc6ddcfcaf42e24209cb1f829b4"
+                        },
+                        "1.14.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.14.4/paper.jar"
+                            ],
+                            "sha256": "bd8ec5cdb22370d37816a6de26798df3d2b0d6f9c7c96c88ca45a1303fea50e8"
+                        },
+                        "1.14.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.14.3/paper.jar"
+                            ],
+                            "sha256": "b6d2d8ac67d685141697a8cecd99c47baf604900007eb0e270fd6ea86cbbc540"
+                        },
+                        "1.14.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.14.2/paper.jar"
+                            ],
+                            "sha256": "12034e578e014eb369e2929f3725bd409858bf94128e46d1f286d5be36c3cb0e"
+                        },
+                        "1.14.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.14.1/paper.jar"
+                            ],
+                            "sha256": "2bcf8017485cc41b3e72daa7285a46f26a85d055b9d638bc9a07f77632168ad7"
+                        },
+                        "1.14": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.14/paper.jar"
+                            ],
+                            "sha256": "338be77f5239c44cff3f80f5c107b5e61ac48fb39348bce7249303209201072a"
+                        },
+                        "1.13.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.13.2/paper.jar"
+                            ],
+                            "sha256": "11e828d0565ab76a0a0e180c056364a95de44958cfd6a6af3f9b1dc70b03e9cd"
+                        },
+                        "1.13.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.13.1/paper.jar"
+                            ],
+                            "sha256": "6637401d87d0f5db5aaee90d7103f52c5e1baaf6b6d4643a5793e7b02b5775cb"
+                        },
+                        "1.13": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.13/paper.jar"
+                            ],
+                            "sha256": "00db82d214242c9345266d44ff8d11a8e857a1a02edf7cb5fcc2d1d973283129"
+                        },
+                        "1.13-pre7": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.13-pre7/paper.jar"
+                            ],
+                            "sha256": "8c2c4dbc3a2842be8454b4c4b306266bc622e2db681233558fedf8230800940c"
+                        },
+                        "1.12.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.12.2/paper.jar"
+                            ],
+                            "sha256": "3a2041807f492dcdc34ebb324a287414946e3e05ec3df6fd03f5b5f7d9afc210"
+                        },
+                        "1.12.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.12.1/paper.jar"
+                            ],
+                            "sha256": "dba2219d674ad85e4ef2c41931d34b6fa4be75a887973ecaaf286727a03812da"
+                        },
+                        "1.12": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.12/paper.jar"
+                            ],
+                            "sha256": "1e7e88a2ed6f2b70fa3f6ec6611373458c5d72b2a8707e60921df601c791e60e"
+                        },
+                        "1.11.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.11.2/paper.jar"
+                            ],
+                            "sha256": "3d0f40ec1f9630dfdbafa626cc20c266d7fb90fc22583dc1b995e7fbfb76830d"
+                        },
+                        "1.10.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.10.2/paper.jar"
+                            ],
+                            "sha256": "83354d24a22b6265e76c089b3d17a568abb446c0ccd12c2452f5e148412b16c2"
+                        },
+                        "1.9.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.9.4/paper.jar"
+                            ],
+                            "sha256": "15a5821ddeacc596432c3fbf24262a2d264f556060ecd6f1838fb01ab5629a81"
+                        },
+                        "1.8.8": {
+                            "url": [
+                                "https://jars.arcadiatech.org/paper/1.8.8/paper.jar"
+                            ],
+                            "sha256": "7ff6d2cec671ef0d95b3723b5c92890118fb882d73b7f8fa0a2cd31d97c55f86"
+                        }
+                    }
+                },
+                "fabric": {
+                    "versions": {
+                        "1.21.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.21.1/fabric.jar"
+                            ],
+                            "sha256": "d1ce6566c3bd63e787ef45abfa8940c264112153d44da45d3aa53c9b40e334e2"
+                        },
+                        "1.21": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.21/fabric.jar"
+                            ],
+                            "sha256": "37f1e630d33d481e62f3d1bd7dfa8fa268a0e3d072a2b89e00b91928970f8eee"
+                        },
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.6/fabric.jar"
+                            ],
+                            "sha256": "defbd1851f8bf7d40403cdda76a68dfd538553b7c9d3d9ded3f69e881cbe5da2"
+                        },
+                        "1.20.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.5/fabric.jar"
+                            ],
+                            "sha256": "76598056a1cb58b7d4187e63517459d338a590d6ed16f321f39340b9bf0e8803"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.4/fabric.jar"
+                            ],
+                            "sha256": "45bf5969b76cc046dcb042375001fd7b6934f6a05c05c20bb53ae6b895c23439"
+                        },
+                        "1.20.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.3/fabric.jar"
+                            ],
+                            "sha256": "0d8fefbd9e6a114d9bcc51e8531937d24e32a444ccc0d495164cf98acada996a"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.2/fabric.jar"
+                            ],
+                            "sha256": "46ab3193ad51fc471fd26a1cbdf47094c93ee21105f562b1380c40d67f2999ac"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20.1/fabric.jar"
+                            ],
+                            "sha256": "d5093ba83742ef496479db82cb384f70a7e84ab7029936d50f5622f651038c49"
+                        },
+                        "1.20": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.20/fabric.jar"
+                            ],
+                            "sha256": "e51ac021caee54da44180747b9539b5d40c9c56147f037360a3f23c6010c2ce9"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.19.4/fabric.jar"
+                            ],
+                            "sha256": "79270f5bfbadcda4beaee57a259baee410acb7d8122e1c98902bd9698fbabf6f"
+                        },
+                        "1.19.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.19.3/fabric.jar"
+                            ],
+                            "sha256": "9140e1cf30ee67a9100467c4aae99b2979e1ccedb0b8efb8ff6c06316b1f91b6"
+                        },
+                        "1.19.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.19.2/fabric.jar"
+                            ],
+                            "sha256": "09d96edc8754f6e94b0af671824b273389853b7bd5f1de99d3b8039bc0643e90"
+                        },
+                        "1.19.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.19.1/fabric.jar"
+                            ],
+                            "sha256": "c3a99e44fefa00c9e5a18b122d54ff2cd2a33ebdd077ca9f1c69635d1a972e3d"
+                        },
+                        "1.19": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.19/fabric.jar"
+                            ],
+                            "sha256": "2af2c372a9c55ad1d95747853e3ad824f6ad7d410122acbdbd8830225275980e"
+                        },
+                        "1.18.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.18.2/fabric.jar"
+                            ],
+                            "sha256": "083e1a01df40543b1970b8eca1ea773677e6751bf235f47d61d0c5c0c9d482c0"
+                        },
+                        "1.18.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.18.1/fabric.jar"
+                            ],
+                            "sha256": "ba5850fa949ad37c5916f7b415df95ccdbc59d9674c57d184a12e3342820f674"
+                        },
+                        "1.18": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.18/fabric.jar"
+                            ],
+                            "sha256": "e025259dfe5a242d795fe5a08fead67984356f11064a08c63ad28fea9c376c69"
+                        },
+                        "1.17.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.17.1/fabric.jar"
+                            ],
+                            "sha256": "404e0ecb6e574e097a962eb67e0b63a437f69f8931ed4fd41e00c2085e35aa55"
+                        },
+                        "1.17": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.17/fabric.jar"
+                            ],
+                            "sha256": "0188b603a3d3ebab511550dc662dc88714f243259be028066b65fd3906aff40f"
+                        },
+                        "1.16.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16.5/fabric.jar"
+                            ],
+                            "sha256": "66fed5b5a1dd5434ab3cf199ada602ba7cc15d75ec29ac1bae38ab5f5afbe972"
+                        },
+                        "1.16.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16.4/fabric.jar"
+                            ],
+                            "sha256": "b6a85d5487870bd4997188b5d879985f5a45c174f6362632364f499e7902501d"
+                        },
+                        "1.16.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16.3/fabric.jar"
+                            ],
+                            "sha256": "98f76ea9643c5cce09977f3c0c708ca64517b22509a48ee63255ff38f2a84b36"
+                        },
+                        "1.16.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16.2/fabric.jar"
+                            ],
+                            "sha256": "39e6b4b11152a6600593fad1de40a84355236e9e898250bd6b818530f7cb00f1"
+                        },
+                        "1.16.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16.1/fabric.jar"
+                            ],
+                            "sha256": "467650d5f950a8fe24ecc8220e3023c688b86a7b96db6c1e2afeccc24148fc71"
+                        },
+                        "1.16": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.16/fabric.jar"
+                            ],
+                            "sha256": "8e743ba9b3cfbb97c0f7bc1d0d6e39cde42602f7cf8dc614d88a9a213caedd5c"
+                        },
+                        "1.15.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.15.2/fabric.jar"
+                            ],
+                            "sha256": "56de9058583e62caf7b13046f6017366e57f27512cb21cb9147c55f048629aef"
+                        },
+                        "1.15.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.15.1/fabric.jar"
+                            ],
+                            "sha256": "70d14b836ee40d9da2bc8fe04d3fdbda62966722b42c2c47013cb8a3928e82dd"
+                        },
+                        "1.15": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.15/fabric.jar"
+                            ],
+                            "sha256": "c851ea1bb630133ba196c2193b524430695108d5315a9b1ce52b55741da343d1"
+                        },
+                        "1.14.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.14.4/fabric.jar"
+                            ],
+                            "sha256": "a8fba5d2f93618e595a8b99f4efe7bbfaf6b75612dc4433ec9bae4ecfdcf3c1f"
+                        },
+                        "1.14.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.14.3/fabric.jar"
+                            ],
+                            "sha256": "dc8953346de79ed73a0624d1b9229e12286f54355d57ee7a8de8972cc1ce5c32"
+                        },
+                        "1.14.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.14.2/fabric.jar"
+                            ],
+                            "sha256": "d6cc10cdaf9760b3fea52d5f43fdccd5183426a8161bf1be0f8c50ac6ae73c94"
+                        },
+                        "1.14.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.14.1/fabric.jar"
+                            ],
+                            "sha256": "5619aaff2daca6375fce8ed5cbaf341ecde0d0957e8b4a2001050b09dac17617"
+                        },
+                        "1.14": {
+                            "url": [
+                                "https://jars.arcadiatech.org/fabric/1.14/fabric.jar"
+                            ],
+                            "sha256": "59441e74c85a8e42de0f755e742845bc80e264712496b85b73bc756887fc931c"
+                        }
+                    }
+                },
+                "folia": {
+                    "versions": {
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/folia/1.20.6/folia.jar"
+                            ],
+                            "sha256": "915ef267705ccf8219a8c93fe0844244374c3091390aab51b66c1da9636c30c0"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/folia/1.20.4/folia.jar"
+                            ],
+                            "sha256": "b0d55be3ba19cb6e040f0e7fba400e5224a271fbc7db73a9683aef7468425af9"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/folia/1.20.2/folia.jar"
+                            ],
+                            "sha256": "d01746e0176b6ef1ae0bef65bc3fa44e2f2063eaa8ab78f9e941345268d4c9e5"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/folia/1.20.1/folia.jar"
+                            ],
+                            "sha256": "c533d8886c60e1db17ebcf841b862731ab0a18d72377f37189930c3324eb7759"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/folia/1.19.4/folia.jar"
+                            ],
+                            "sha256": "e6729be678110cf76b5feebaf4da09f447aacad907350f156bf163b561a9d979"
+                        }
+                    }
+                },
+                "forge-installer": {
+                    "versions": {
+                        "1.21.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.21.1/forge-installer.jar"
+                            ],
+                            "sha256": "f2a101163c90618d5aac457140dcc6eb5ba5ac497e8641520c2584dfcade15f8"
+                        },
+                        "1.21": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.21/forge-installer.jar"
+                            ],
+                            "sha256": "e59cbc05af015b2e6c083703a60f931b88e931f14cc9c97c401d4f72fc14e1ec"
+                        },
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20.6/forge-installer.jar"
+                            ],
+                            "sha256": "669c77e7e148130e63533b67a6baf94c730b1e3f41a60042158563d73d084d3a"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20.4/forge-installer.jar"
+                            ],
+                            "sha256": "c4a52e84938c8247f670a94c8bb17b01a63747512b08eec4d6d29cc9df3e49d9"
+                        },
+                        "1.20.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20.3/forge-installer.jar"
+                            ],
+                            "sha256": "8c6e5fcb9181259d0354bc555a13e09b212df0a5f33b2c06eb73a4cad74e6d9f"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20.2/forge-installer.jar"
+                            ],
+                            "sha256": "10c3f124c8c6b9c2550e0003ebf014c8d24f8ef6b4b9d76fd4619cdc6013eef6"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20.1/forge-installer.jar"
+                            ],
+                            "sha256": "87b394d2530226dee1560e0d3a01eb1c065ee61a8969ddc3242f76d7ff241e7d"
+                        },
+                        "1.20": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.20/forge-installer.jar"
+                            ],
+                            "sha256": "9357a3ebdc113e39a535d47c5300dbcca943261a12ddda4861949e1e88d785d6"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.19.4/forge-installer.jar"
+                            ],
+                            "sha256": "2ff20b5cfccdfbd2a103f7a036638861883b8c81f987fc70560da907bd4651a0"
+                        },
+                        "1.19.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.19.3/forge-installer.jar"
+                            ],
+                            "sha256": "3d9df7302958414b8bd52af8f52f486652e3f5be877e4a881d7c0ea6f968ae56"
+                        },
+                        "1.19.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.19.2/forge-installer.jar"
+                            ],
+                            "sha256": "2de592f80d53c3a65de0b6f801bfb2783fa863c0c965537875ddaaedc116dbb1"
+                        },
+                        "1.19.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.19.1/forge-installer.jar"
+                            ],
+                            "sha256": "0ad719a832b71c3cf1381f1413a28fb99c6a61109fd17d131c443bb2634cfc87"
+                        },
+                        "1.19": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.19/forge-installer.jar"
+                            ],
+                            "sha256": "4251a8c7f44278ab9756adc98097dc9d9f5900c83908da08ebe6484a31dbaa2a"
+                        },
+                        "1.18.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.18.2/forge-installer.jar"
+                            ],
+                            "sha256": "099f3aa2740b4976dd8e5359f566671149dac87796dbc8fb60ad5f94da19ee9a"
+                        },
+                        "1.18.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.18.1/forge-installer.jar"
+                            ],
+                            "sha256": "ed75284affe9bd744e6ecc7d5cf6699b66f727fa892a8b591586271a7cf47059"
+                        },
+                        "1.18": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.18/forge-installer.jar"
+                            ],
+                            "sha256": "4b6d2a049b167f9e2ef095b45b5a78537e5884f9fcc051bfaabd2b0aa35165d2"
+                        },
+                        "1.17.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.17.1/forge-installer.jar"
+                            ],
+                            "sha256": "31f2319b1b9ca491aaccc020887240f8524a4ff2a8e0f8b795e17e889cbc043b"
+                        },
+                        "1.16.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.16.5/forge-installer.jar"
+                            ],
+                            "sha256": "dfa90c681f30be2406548b6429bccb68d95af4f64ab19b8c58f6128fd50ff857"
+                        },
+                        "1.16.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.16.4/forge-installer.jar"
+                            ],
+                            "sha256": "b8f38e63ef05c513491c3fc1e3d5f82702f4c75d44934fe59dfeb40f213334ed"
+                        },
+                        "1.16.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.16.3/forge-installer.jar"
+                            ],
+                            "sha256": "54996107eea6ead80a11f642161f9fb4c5d7764a996e87187c64da0a9bd6926b"
+                        },
+                        "1.16.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.16.2/forge-installer.jar"
+                            ],
+                            "sha256": "961fb78089c638a8a70f178bb6e51880bf5d4c027830c03da27031d1e0ad72b1"
+                        },
+                        "1.16.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.16.1/forge-installer.jar"
+                            ],
+                            "sha256": "2b458ceff2f7d32edff05dfba6d636ecfade6554e1c6b78c7a2e44ac3e001bb5"
+                        },
+                        "1.15.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.15.2/forge-installer.jar"
+                            ],
+                            "sha256": "84fd49a743978421b26f62ac78222289fe892a46f996cf11cb5e05b7441a7773"
+                        },
+                        "1.15.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.15.1/forge-installer.jar"
+                            ],
+                            "sha256": "6e7032a7f5d7bd95dfe1e6540b11e53512f39356d318f402a583f796bf221564"
+                        },
+                        "1.15": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.15/forge-installer.jar"
+                            ],
+                            "sha256": "29b21b71b0db46e3dafe6f79a1e7698db27da49ef00e4c1779aabc529fd57096"
+                        },
+                        "1.14.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.14.4/forge-installer.jar"
+                            ],
+                            "sha256": "e68a0e2d589b2954c5d109a04b80747ac8c061acabe074db1607f9c2fd7d2ce1"
+                        },
+                        "1.14.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.14.3/forge-installer.jar"
+                            ],
+                            "sha256": "5724ae9ab8985395fdc02b2ec1caf6a10e3e13e735a90afffb759429a9b96dd4"
+                        },
+                        "1.14.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.14.2/forge-installer.jar"
+                            ],
+                            "sha256": "2fb915b59b903cc324a47e1dd02e14aa5cbb7c8b7dd5b23ee8af5f1b85b4b76c"
+                        },
+                        "1.13.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.13.2/forge-installer.jar"
+                            ],
+                            "sha256": "d46cb326e7dc32695084090c8169bb57f32f1c23b801ddb35a336f252e381191"
+                        },
+                        "1.12.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.12.2/forge-installer.jar"
+                            ],
+                            "sha256": "ea7c33ba95e3993a98d0e9e38168c0759ec323a18675a71d938e1f3f70e6e8e7"
+                        },
+                        "1.12.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.12.1/forge-installer.jar"
+                            ],
+                            "sha256": "b80a407949a8c23858fac32c98c87cb05440a730f9b3f7f221ced8455c853849"
+                        },
+                        "1.12": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.12/forge-installer.jar"
+                            ],
+                            "sha256": "ed92ff1d6ec2b77b511b682e4d37df3e692d9f3ecaf6af2caf5e317a5188780c"
+                        },
+                        "1.11.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.11.2/forge-installer.jar"
+                            ],
+                            "sha256": "00aea3ddf1e78bbb4d5d05e8c22fb3e849de09b47d828e57dad373a16bb8a26f"
+                        },
+                        "1.11": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.11/forge-installer.jar"
+                            ],
+                            "sha256": "1a82afd14c85b25001927c684f7402e8d3df689a0a236c7143e35cbad41398a5"
+                        },
+                        "1.10.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/forge-installer/1.10.2/forge-installer.jar"
+                            ],
+                            "sha256": "664393c5a924b8f06cfb953903abcf9fe5e99ecbe6af8c7ea217339c766e519c"
+                        }
+                    }
+                },
+                "purpur": {
+                    "versions": {
+                        "1.21.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.21.1/purpur.jar"
+                            ],
+                            "sha256": "c96a95c46be425a8ba62aad5074d11ca0b7ee7e8eaf3d4dbac92c7a690a9d95c"
+                        },
+                        "1.21": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.21/purpur.jar"
+                            ],
+                            "sha256": "12885008efdc4777eba85e4ec3e35f6b916ccbbb168a4453506b4596e028abcb"
+                        },
+                        "1.20.6": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.20.6/purpur.jar"
+                            ],
+                            "sha256": "7d5410a978360a46faa76a288b1eab353135d8db16e40329a154402ec1b12d91"
+                        },
+                        "1.20.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.20.4/purpur.jar"
+                            ],
+                            "sha256": "c8593c0b2760f6ea5bea5a633dfa91eb79005e81453ffd0383ab626f087b5441"
+                        },
+                        "1.20.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.20.2/purpur.jar"
+                            ],
+                            "sha256": "395e92bda4a61e5677210da6ec8a86e0ef4d76ae255d1b09d995aa068fb6bd94"
+                        },
+                        "1.20.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.20.1/purpur.jar"
+                            ],
+                            "sha256": "238e64b33e5c7c9b87506cf1a23f239e6ce7fb71edd9d31837f229c94f4dfa1a"
+                        },
+                        "1.20": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.20/purpur.jar"
+                            ],
+                            "sha256": "2cebd6f0729b29486cc0b6329de07f45a609f5660d3199bc06b98cf540e57f72"
+                        },
+                        "1.19.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.19.4/purpur.jar"
+                            ],
+                            "sha256": "424f51086c9e9090287812a4c21b65d8d69245e7e7dc3729970f12fbf5b366ad"
+                        },
+                        "1.19.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.19.3/purpur.jar"
+                            ],
+                            "sha256": "b4f4a6b1342cecc9225d5b832d0f2f20a486c97129d4af3d57ee9569e1ce24d7"
+                        },
+                        "1.19.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.19.2/purpur.jar"
+                            ],
+                            "sha256": "57eb7f25b5ba46efbe2f0f086aa9c6acc3de27f7e5177fffcb1bb61631dd7689"
+                        },
+                        "1.19.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.19.1/purpur.jar"
+                            ],
+                            "sha256": "2b22f4cd3f7e097250b497de77c5e81d38181e0a3e69ecc4607b9a235beab355"
+                        },
+                        "1.19": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.19/purpur.jar"
+                            ],
+                            "sha256": "f943dada19ecb6865d717c371e6efbbee15f57c7ceee785ee0687c99c0dd9113"
+                        },
+                        "1.18.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.18.2/purpur.jar"
+                            ],
+                            "sha256": "d95e92082a83ac999695e07968f2acbf288243bc410cdd807b8f043b17fbe39e"
+                        },
+                        "1.18.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.18.1/purpur.jar"
+                            ],
+                            "sha256": "aca14f0fc5f597111d1dd616da1c164a438ed31ef0d5116101f1625a541eb29b"
+                        },
+                        "1.18": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.18/purpur.jar"
+                            ],
+                            "sha256": "ee2625b06e9c3788c8f3b6b0856552dcef659298008c9466bd073bd0b3371264"
+                        },
+                        "1.17.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.17.1/purpur.jar"
+                            ],
+                            "sha256": "09014a62a89c424f2312264d2e9514fa9e3174735199b1d48ec7ceb78e91596a"
+                        },
+                        "1.17": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.17/purpur.jar"
+                            ],
+                            "sha256": "30cad152da3564d56e00e85646a9a51a3dc6f2046f4e8ddc80223035a82312ae"
+                        },
+                        "1.16.5": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.16.5/purpur.jar"
+                            ],
+                            "sha256": "bc041cc71ee321a3b36253f6ac6da091b77c926821dbb82ea762003426c43626"
+                        },
+                        "1.16.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.16.4/purpur.jar"
+                            ],
+                            "sha256": "0423769ce836a137e3433ae6591d95f2fe070a8ec033e48bd8dd09a5be8db4fa"
+                        },
+                        "1.16.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.16.3/purpur.jar"
+                            ],
+                            "sha256": "9d46992387cab7f2242c438071cc78786f7661bf8013d09537e950533ee037d3"
+                        },
+                        "1.16.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.16.2/purpur.jar"
+                            ],
+                            "sha256": "85cef82a550ebfa6804ea8e2fc166e24184860fa9ab3efbd9b9f796d9f83055e"
+                        },
+                        "1.16.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.16.1/purpur.jar"
+                            ],
+                            "sha256": "e55ffb540c59b1798c62f5dd354adce4a4e328a05f876595274b587139da3efb"
+                        },
+                        "1.15.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.15.2/purpur.jar"
+                            ],
+                            "sha256": "183e64d70f76913163c006d9144345554683cefd96881b27e176812522228236"
+                        },
+                        "1.15.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.15.1/purpur.jar"
+                            ],
+                            "sha256": "b2143c092a71be2bf7577b602d077442783a730bf9445e4bc1eef7dcefd28577"
+                        },
+                        "1.15": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.15/purpur.jar"
+                            ],
+                            "sha256": "e90a2291539764dba61bcbdfb9faacc917cfab5693aa3ab3f5e3e93f704bee97"
+                        },
+                        "1.14.4": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.14.4/purpur.jar"
+                            ],
+                            "sha256": "660c9a395f5f6b376b61669a8ee7fb4265c5bb79dc8c73f4202a3b6417203726"
+                        },
+                        "1.14.3": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.14.3/purpur.jar"
+                            ],
+                            "sha256": "221af785c854dd2a939035f134b32bd13430a91dd6584e6f89294a98f4392332"
+                        },
+                        "1.14.2": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.14.2/purpur.jar"
+                            ],
+                            "sha256": "ccfa64c4aa180c98e89694b713338ababd1e11890dc9d07e2e734c6b30973493"
+                        },
+                        "1.14.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/purpur/1.14.1/purpur.jar"
+                            ],
+                            "sha256": "d5813af64b5a05df6857d101b047347d312dcc1c15d9349c41e237cf91a1ce3e"
+                        }
+                    }
+                }
+            }
+        },
+        "mc_java_proxies": {
+            "enabled": true,
+            "friendly_name": "Minecraft Proxies",
+            "types": {
+                "velocity": {
+                    "versions": {
+                        "3.3.0-SNAPSHOT": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.3.0-SNAPSHOT/velocity.jar"
+                            ],
+                            "sha256": "09f5233688be17f76b37a38536dc2af6a050192b0d413daf9c28788ec6b043c3"
+                        },
+                        "3.2.0-SNAPSHOT": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.2.0-SNAPSHOT/velocity.jar"
+                            ],
+                            "sha256": "27f78414a3c39736130b28e69c2d22f52e13cb6c70a9245a7c07a4a76787723e"
+                        },
+                        "3.1.2-SNAPSHOT": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.1.2-SNAPSHOT/velocity.jar"
+                            ],
+                            "sha256": "823393405413413dae1f7c83c89851dbe7439e719cc31793a15b9aad951a4315"
+                        },
+                        "3.1.1-SNAPSHOT": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.1.1-SNAPSHOT/velocity.jar"
+                            ],
+                            "sha256": "f2fbf80d9ef089d9905db3b841232d25a2e16a6208dfadb5704a3d9f9ead8e8d"
+                        },
+                        "3.1.1": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.1.1/velocity.jar"
+                            ],
+                            "sha256": "89a44c6385e39712717e2476254f931717f4d718deeb72578d159187cf5119c7"
+                        },
+                        "3.1.0": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/3.1.0/velocity.jar"
+                            ],
+                            "sha256": "7b509535916a3ee4dacea289915a2851b87f4738bd42f12ff38b674417b5f683"
+                        },
+                        "1.1.9": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/1.1.9/velocity.jar"
+                            ],
+                            "sha256": "d6ba2c934eb956b3aea5381135fb6c5763bb3a50a85022671fac6f5bfed63843"
+                        },
+                        "1.0.10": {
+                            "url": [
+                                "https://jars.arcadiatech.org/velocity/1.0.10/velocity.jar"
+                            ],
+                            "sha256": "16e786af6b6c9c34e77f6229c8fd573b7b97a8394beb3575bfdfa0b34826cae3"
+                        }
+                    }
+                },
+                "bungee-cord": {
+                    "versions": {
+                        "latest": {
+                            "url": [
+                                "https://jars.arcadiatech.org/bungee-cord/latest/bungee-cord.jar"
+                            ],
+                            "sha256": "a127ac7b68e619362f1543f5910ff76f1f780189b4bb850716068fdc89abacff"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

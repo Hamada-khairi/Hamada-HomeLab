@@ -1,0 +1,775 @@
+# networks
+#==============================================================================================================================
+
+networks:
+  hamada-network:
+    ipam:
+      config:
+        - subnet: 10.10.10.0/24
+
+# volumes
+#==============================================================================================================================
+
+volumes:
+  grafana_data:
+    external: false
+  portainer_data:
+    external: false
+  bind9_config:
+    external: false
+  bind9_cache:
+    external: false
+  bind9_records:
+    external: false
+  homarr_configs:
+    external: false
+  homarr_icons:
+    external: false
+  zabbixdb_data:
+    external: false
+  prowlarr_data:
+    external: false
+  emby_data:
+    external: false
+  qbittorrent_data:
+    external: false
+  requestrr_config:
+    external: false
+  plex_library:
+    external: false
+  adguardhome_sync_config:
+    external: false
+  crafty_backups:
+    external: false
+  crafty_logs:
+    external: false
+  crafty_servers:
+    external: false
+  crafty_config:
+    external: false
+  crafty_import:
+    external: false
+
+
+# services
+#==============================================================================================================================
+
+services:
+
+  # Traefik - A modern HTTP reverse proxy and load balancer.
+  #==============================================================================================================================
+  # sudo timedatectl set-timezone ${TZ}
+
+  traefik:
+    image: docker.io/library/traefik:${TRAEFIK_VERSION}
+    container_name: hamada-traefik
+    ports:
+      - 80:80
+      - 443:443
+      # -- (Optional) Enable Dashboard, don't do in production
+      # - 8080:8080
+    command: --api.insecure=true --providers.docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/config/traefik.yaml:/etc/traefik/traefik.yaml:ro
+      - ./traefik/config/conf/:/etc/traefik/conf/
+      - ./traefik/config/certs/:/etc/traefik/certs/:ro
+    networks:
+      - hamada-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.traefik-dashboard.loadbalancer.server.port=8080"
+      - "traefik.http.services.traefik-dashboard.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.traefik-dashboard-http.entrypoints=web"
+      - "traefik.http.routers.traefik-dashboard-http.rule=Host(`traefik-dashboard.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.traefik-dashboard.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.traefik-dashboard-https.entrypoints=websecure"
+      - "traefik.http.routers.traefik-dashboard-https.rule=Host(`traefik-dashboard.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.traefik-dashboard.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.traefik-dashboard-https.tls=true"
+
+  # Bind9 - A DNS server to handle DNS queries for your local network.
+  #==============================================================================================================================
+  bind9:
+    container_name: hamada-bind-dns
+    image: ubuntu/bind9:${BIND_VERSION} 
+    environment:
+      - BIND9_USER=root
+      - TZ=${TZ}
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./bind9/config:/etc/bind
+      - ./bind9/cache:/var/cache/bind
+      - ./bind9/records:/var/lib/bind
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.53  # Assign a static IP to your Bind9 container
+
+  # Grafana - An open-source platform for monitoring and observability.
+  #==============================================================================================================================
+  grafana:
+    image: grafana/grafana-oss:${GRAFANA_VERSION}
+    container_name: hamada-grafana-server
+    restart: always
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+      - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app ${GFN_ZBX_PLUGIN_VERSION}
+      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=alexanderzobnin-zabbix-datasource
+      - GF_LOG_LEVEL=debug
+      # - GF_SMTP_ENABLED=true
+      # - GF_SMTP_HOST=mailhog:1025
+      - GF_SMTP_USER=
+      - GF_SMTP_PASSWORD=
+      - GF_SMTP_CERT_FILE=
+      - GF_SMTP_KEY_FILE=
+      - GF_SMTP_EHLO_IDENTITY=
+      - GF_SMTP_SKIP_VERIFY=false
+      # - GF_SMTP_FROM_ADDRESS=grafana@hamadazabbixlab.local
+      # - GF_SMTP_NAME=Grafana-ZabbixLab
+    volumes:
+      - grafana_data:/var/lib/grafana
+      # - ./grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - hamada-network
+    depends_on:
+      - zabbix-frontend
+    dns:
+      - 10.10.10.53  # Use Bind9 for DNS resolution
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+      - "traefik.http.services.grafana.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.grafana-http.entrypoints=web"
+      - "traefik.http.routers.grafana-http.rule=Host(`grafana.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.grafana.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.grafana-https.entrypoints=websecure"
+      - "traefik.http.routers.grafana-https.rule=Host(`grafana.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.grafana.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.grafana-https.tls=true"
+
+  # Sonarr - A PVR for Usenet and BitTorrent users to manage TV series.
+  #==============================================================================================================================
+  hamada-sonarr:
+    image: linuxserver/sonarr
+    container_name: hamada-sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+    volumes:
+      - ./sonarr/tv:/tv
+      - ./sonarr/downloads:/downloads
+    # ports:
+    #   - 8989:8989
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.41
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.sonarr.loadbalancer.server.port=8989"
+      - "traefik.http.services.sonarr.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.sonarr-http.entrypoints=web"
+      - "traefik.http.routers.sonarr-http.rule=Host(`sonarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.sonarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.sonarr-https.entrypoints=websecure"
+      - "traefik.http.routers.sonarr-https.rule=Host(`sonarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.sonarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.sonarr-https.tls=true"
+
+  # Radarr - A PVR for Usenet and BitTorrent users to manage movies.
+  #==============================================================================================================================
+  hamada-radarr:
+    image: linuxserver/radarr
+    container_name: hamada-radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+    volumes:
+      - ./radarr/movies:/movies
+      - ./radarr/downloads:/downloads
+    # ports:
+    #   - 7878:7878
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.3
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.radarr.loadbalancer.server.port=7878"
+      - "traefik.http.services.radarr.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.radarr-http.entrypoints=web"
+      - "traefik.http.routers.radarr-http.rule=Host(`radarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.radarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.radarr-https.entrypoints=websecure"
+      - "traefik.http.routers.radarr-https.rule=Host(`radarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.radarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.radarr-https.tls=true"
+
+  # Jellyfin - A media system that organizes your media and streams it to various devices.
+  #==============================================================================================================================
+  hamada-jellyfin:
+    image: ghcr.io/linuxserver/jellyfin
+    container_name: hamada-jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+    volumes:
+      - ./jellyfin/tv:/data/tvshows
+      - ./jellyfin/movies:/data/movies
+    # ports:
+    #   - 8096:8096
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.4
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.jellyfin.loadbalancer.server.port=8096"
+      - "traefik.http.services.jellyfin.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.jellyfin-http.entrypoints=web"
+      - "traefik.http.routers.jellyfin-http.rule=Host(`jellyfin.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.jellyfin.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.jellyfin-https.entrypoints=websecure"
+      - "traefik.http.routers.jellyfin-https.rule=Host(`jellyfin.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.jellyfin.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.jellyfin-https.tls=true"
+
+  # Portainer - A management UI for Docker hosts or Swarm clusters.
+  #==============================================================================================================================
+  portainer-ce:
+    image: portainer/portainer-ce:latest
+    container_name: hamada-portainer
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.5
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9443"
+      - "traefik.http.services.portainer.loadbalancer.server.scheme=https"
+      - "traefik.http.routers.portainer-http.entrypoints=web"
+      - "traefik.http.routers.portainer-http.rule=Host(`portainer.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.portainer.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.portainer-https.entrypoints=websecure"
+      - "traefik.http.routers.portainer-https.rule=Host(`portainer.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.portainer.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.portainer-https.tls=true"
+    dns:
+      - 10.10.10.53  # Use Bind9 for DNS resolution
+
+  # Transmission with OpenVPN - A BitTorrent client with VPN support for secure downloading.
+  #==============================================================================================================================
+  # hamada-transmission:
+  #   image: haugene/transmission-openvpn
+  #   container_name: hamada-transmission
+  #   cap_add:
+  #     - NET_ADMIN
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - OPENVPN_PROVIDER=NORDVPN
+  #     - OPENVPN_CONFIG=
+  #     - OPENVPN_USERNAME=user
+  #     - OPENVPN_PASSWORD=pass
+  #     - LOCAL_NETWORK=192.168.1.0/24
+  #     - TRANSMISSION_DOWNLOAD_DIR=/downloads
+  #     - TRANSMISSION_INCOMPLETE_DIR=/incomplete-downloads
+  #   volumes:
+  #     - ./transmission/data:/data
+  #     - ./transmission/downloads:/downloads
+  #     - ./transmission/incomplete:/incomplete-downloads
+  #   # ports:
+  #   #   - 9091:9091
+  #   logging:
+  #     driver: json-file
+  #     options:
+  #       max-size: 10m
+  #   restart: always
+  #   networks:
+  #     hamada-network:
+  #       ipv4_address: 10.10.10.6
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.services.transmission.loadbalancer.server.port=9091"
+  #     - "traefik.http.services.transmission.loadbalancer.server.scheme=http"
+  #     - "traefik.http.routers.transmission-http.entrypoints=web"
+  #     - "traefik.http.routers.transmission-http.rule=Host(`transmission.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.transmission.${DOMAIN_NAME}`)"
+  #     - "traefik.http.routers.transmission-https.entrypoints=websecure"
+  #     - "traefik.http.routers.transmission-https.rule=Host(`transmission.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.transmission.${DOMAIN_NAME}`)"
+  #     - "traefik.http.routers.transmission-https.tls=true"
+
+
+  # Zabbix Server - Central monitoring server for Zabbix setup.
+  #==============================================================================================================================
+  zabbix-server:
+    hostname: zabbix-server
+    image: zabbix/zabbix-server-pgsql:alpine-${ZABBIX_VERSION}
+    container_name: hamada-zabbix-server
+    environment:
+      - DB_SERVER_PORT=5432
+      - DB_SERVER_HOST=timescaledb
+      - POSTGRES_DB=zabbix
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - ENABLE_TIMESCALEDB=true
+      - ZBX_STARTREPORTWRITERS=2
+      - ZBX_WEBSERVICEURL=http://zabbix-reports:10053/report
+    volumes:
+      - ./zabbix/usr/lib/zabbix/externalscripts:/usr/lib/zabbix/externalscripts:ro
+    depends_on:
+      - timescaledb
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.20
+    ports:
+      - 10051:10051
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.zabbix-server.loadbalancer.server.port=10051"
+      - "traefik.http.services.zabbix-server.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.zabbix-server-http.entrypoints=web"
+      - "traefik.http.routers.zabbix-server-http.rule=Host(`zabbix-server.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-server.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-server-https.entrypoints=websecure"
+      - "traefik.http.routers.zabbix-server-https.rule=Host(`zabbix-server.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-server.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-server-https.tls=true"
+
+  # Zabbix Frontend - Web interface for Zabbix server.
+  #==============================================================================================================================
+  zabbix-frontend:
+    hostname: zabbix-frontend
+    image: zabbix/zabbix-web-apache-pgsql:alpine-${ZABBIX_VERSION}
+    container_name: hamada-zabbix-frontend
+    environment:
+      - DB_SERVER_PORT=5432
+      - DB_SERVER_HOST=timescaledb
+      - POSTGRES_DB=zabbix
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - PHP_TZ=${TZ}
+      - ZBX_SERVER_NAME=zabbix-server
+      - ZBX_SERVER_HOST=zabbix-server
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./zabbix/etc/ssl/apache2:/etc/ssl/apache2:ro
+    depends_on:
+      - timescaledb
+      - zabbix-server
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.21
+    ports:
+      - 8010:8080
+      - 8011:8443
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.zabbix-frontend.loadbalancer.server.port=8080"
+      - "traefik.http.services.zabbix-frontend.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.zabbix-frontend-http.entrypoints=web"
+      - "traefik.http.routers.zabbix-frontend-http.rule=Host(`zabbix-frontend.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-frontend.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-frontend-https.entrypoints=websecure"
+      - "traefik.http.routers.zabbix-frontend-https.rule=Host(`zabbix-frontend.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-frontend.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-frontend-https.tls=true"
+
+  # TimescaleDB - Database backend for Zabbix, optimized for time-series data.
+  #==============================================================================================================================
+  timescaledb:
+    hostname: timescaledb
+    image: timescale/timescaledb:2.14.2-pg15-oss
+    container_name: hamada-zabbix-timescaledb
+    environment:
+      - POSTGRES_DB=zabbix
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - TS_TUNE_MEMORY=2GB
+      - TS_TUNE_NUM_CPUS=2
+    volumes:
+      - zabbixdb_data:/var/lib/postgresql/data
+    command: ["postgres", "-c", "max_connections=100"]
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.22
+    restart: unless-stopped
+
+  # Zabbix Agent - Monitoring agent for collecting metrics.
+  #==============================================================================================================================
+  zabbix-agent:
+    hostname: zabbix-agent
+    image: zabbix/zabbix-agent:alpine-${ZABBIX_VERSION}
+    container_name: hamada-zabbix-agent
+    environment:
+      - ZBX_HOSTNAME=zabbix-agent
+      - ZBX_SERVER_HOST=zabbix-server
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./zabbix/etc/zabbix/zabbix_agentd.d:/etc/zabbix/zabbix_agentd.d:ro
+      - ./zabbix/frontend_hacks:/usr/share/zabbix/local/
+    depends_on:
+      - zabbix-server
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.23
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.zabbix-agent.loadbalancer.server.port=10050"
+      - "traefik.http.services.zabbix-agent.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.zabbix-agent-http.entrypoints=web"
+      - "traefik.http.routers.zabbix-agent-http.rule=Host(`zabbix-agent.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-agent.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-agent-https.entrypoints=websecure"
+      - "traefik.http.routers.zabbix-agent-https.rule=Host(`zabbix-agent.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-agent.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-agent-https.tls=true"
+
+  # Zabbix Reports - Service for generating reports for Zabbix.
+  #==============================================================================================================================
+  zabbix-reports:
+    hostname: zabbix-reports
+    image: zabbix/zabbix-web-service:alpine-${ZABBIX_VERSION}
+    container_name: hamada-zabbix-reports
+    environment:
+      - ZBX_ALLOWEDIP=zabbix-server,zabbix-frontend
+    cap_add:
+      - SYS_ADMIN
+    depends_on:
+      - zabbix-server
+      - zabbix-frontend
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.24
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.zabbix-reports.loadbalancer.server.port=10053"
+      - "traefik.http.services.zabbix-reports.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.zabbix-reports-http.entrypoints=web"
+      - "traefik.http.routers.zabbix-reports-http.rule=Host(`zabbix-reports.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-reports.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-reports-https.entrypoints=websecure"
+      - "traefik.http.routers.zabbix-reports-https.rule=Host(`zabbix-reports.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zabbix-reports.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zabbix-reports-https.tls=true"
+
+  # Zapix - Frontend for Zabbix, providing an alternative UI.
+  #==============================================================================================================================
+  zapix:
+    hostname: zapix
+    container_name: hamada-zapix
+    build:
+      context: ./zapix
+    depends_on:
+      - zabbix-frontend
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.25
+    # ports:
+    #   - 88:80
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.zapix.loadbalancer.server.port=80"
+      - "traefik.http.services.zapix.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.zapix-http.entrypoints=web"
+      - "traefik.http.routers.zapix-http.rule=Host(`zapix.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zapix.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zapix-https.entrypoints=websecure"
+      - "traefik.http.routers.zapix-https.rule=Host(`zapix.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.zapix.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.zapix-https.tls=true"
+
+
+
+  # Prowlarr - Indexer manager/proxy for managing indexers used by various applications.
+  #==============================================================================================================================
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: hamada-prowlarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+    volumes:
+      - ./prowlarr/data:/config
+    # ports:
+      # - 9696:9696
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.30
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.prowlarr.loadbalancer.server.port=9696"
+      - "traefik.http.services.prowlarr.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.prowlarr-http.entrypoints=web"
+      - "traefik.http.routers.prowlarr-http.rule=Host(`prowlarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.prowlarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.prowlarr-https.entrypoints=websecure"
+      - "traefik.http.routers.prowlarr-https.rule=Host(`prowlarr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.prowlarr.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.prowlarr-https.tls=true"
+
+  # Emby - Media server software for streaming personal content.
+  #==============================================================================================================================
+  emby:
+    image: emby/embyserver
+    container_name: hamada-embyserver
+    # runtime: nvidia # Expose NVIDIA GPUs
+    # network_mode: host # Enable DLNA and Wake-on-Lan
+    environment:
+      - UID=1000
+      - GID=100
+      - GIDLIST=100
+    volumes:
+      - ./emby/programdata:/config
+      - ./emby/tvshows:/mnt/share1
+      - ./emby/movies:/mnt/share2
+    ports:
+      - 8096:8096
+      - 8920:8920
+    # devices:
+    #   - /dev/dri:/dev/dri
+    #   - /dev/vchiq:/dev/vchiq
+    restart: on-failure
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.emby.loadbalancer.server.port=8096"
+      - "traefik.http.services.emby.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.emby-http.entrypoints=web"
+      - "traefik.http.routers.emby-http.rule=Host(`emby.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.emby.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.emby-https.entrypoints=websecure"
+      - "traefik.http.routers.emby-https.rule=Host(`emby.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.emby.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.emby-https.tls=true"
+
+  # qBittorrent - A popular torrent client for downloading and managing torrents.
+  #==============================================================================================================================
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: hamada-qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - WEBUI_PORT=8080
+      - TORRENTING_PORT=6881
+    volumes:
+      - ./qbittorrent/qbittorrent/appdata:/config
+      - ./qbittorrent/downloads:/downloads
+    ports:
+      # - 8080:8080
+      - 6881:6881
+      - 6881:6881/udp
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.31
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.qbittorrent.loadbalancer.server.port=8080"
+      - "traefik.http.services.qbittorrent.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.qbittorrent-http.entrypoints=web"
+      - "traefik.http.routers.qbittorrent-http.rule=Host(`qbittorrent.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.qbittorrent.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.qbittorrent-https.entrypoints=websecure"
+      - "traefik.http.routers.qbittorrent-https.rule=Host(`qbittorrent.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.qbittorrent.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.qbittorrent-https.tls=true"
+
+  # Requestrr - A chatbot for managing media requests via Discord.
+  #==============================================================================================================================
+  # requestrr:
+  #   image: thomst08/requestrr
+  #   container_name: hamada-requestrr
+  #   ports:
+  #     - 4545:4545
+  #   volumes:
+  #     - ./requestrr/opt/Requestrr/config:/root/config
+  #   restart: unless-stopped
+  #   networks:
+  #     hamada-network:
+  #       ipv4_address: 10.10.10.32
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.services.requestrr.loadbalancer.server.port=4545"
+  #     - "traefik.http.services.requestrr.loadbalancer.server.scheme=http"
+  #     - "traefik.http.routers.requestrr-http.entrypoints=web"
+  #     - "traefik.http.routers.requestrr-http.rule=Host(`requestrr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.requestrr.${DOMAIN_NAME}`)"
+  #     - "traefik.http.routers.requestrr-https.entrypoints=websecure"
+  #     - "traefik.http.routers.requestrr-https.rule=Host(`requestrr.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.requestrr.${DOMAIN_NAME}`)"
+  #     - "traefik.http.routers.requestrr-https.tls=true"
+
+
+
+  # Plex - Media server software for streaming personal content.
+  #==============================================================================================================================
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: hamada-plex
+    # network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - VERSION=docker
+      - PLEX_CLAIM= # optional
+    volumes:
+      - ./plex/plex/library:/config
+      - ./plex/tvseries:/tv
+      - ./plex/movies:/movies
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.plex.loadbalancer.server.port=32400"
+      - "traefik.http.services.plex.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.plex-http.entrypoints=web"
+      - "traefik.http.routers.plex-http.rule=Host(`plex.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.plex.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.plex-https.entrypoints=websecure"
+      - "traefik.http.routers.plex-https.rule=Host(`plex.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.plex.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.plex-https.tls=true"
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.33
+
+
+  # AdGuardHome Sync - Synchronize multiple AdGuardHome instances.
+  #==============================================================================================================================
+  adguardhome-sync:
+    image: lscr.io/linuxserver/adguardhome-sync:latest
+    container_name: hamada-adguardhome-sync
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - CONFIGFILE=/config/adguardhome-sync.yaml # optional
+    volumes:
+      - ./adguard/adguardhome-sync/config:/config
+    # ports:
+    #   - 8080:8080
+    restart: unless-stopped
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.34
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.adguardhome-sync.loadbalancer.server.port=8080"
+      - "traefik.http.services.adguardhome-sync.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.adguardhome-sync-http.entrypoints=web"
+      - "traefik.http.routers.adguardhome-sync-http.rule=Host(`adguardhome-sync.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.adguardhome-sync.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.adguardhome-sync-https.entrypoints=websecure"
+      - "traefik.http.routers.adguardhome-sync-https.rule=Host(`adguardhome-sync.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.adguardhome-sync.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.adguardhome-sync-https.tls=true"
+
+
+
+
+  # Guacamole - Remote desktop gateway that allows you to access your desktop from anywhere.
+  #==============================================================================================================================
+  guacd:
+    container_name: hamada-guacd
+    image: guacamole/guacd
+    restart: always
+    volumes:
+      - ./guacamole/drive:/drive:rw
+      - ./guacamole/record:/record:rw
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.35
+
+
+
+  postgres:
+    container_name: hamada-postgres_guacamole
+    environment:
+      PGDATA: /var/lib/postgresql/data/guacamole
+      POSTGRES_DB: guacamole_db
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_USER: guacamole_user
+    image: postgres:15.2-alpine
+    restart: always
+    volumes:
+      - ./guacamole/init:/docker-entrypoint-initdb.d:z
+      - ./guacamole/data:/var/lib/postgresql/data:Z
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.36
+
+
+  guacamole:
+    container_name: hamada-guacamole
+    depends_on:
+      - guacd
+      - postgres
+    environment:
+      GUACD_HOSTNAME: guacd
+      POSTGRES_DATABASE: guacamole_db
+      POSTGRES_HOSTNAME: postgres
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_USER: guacamole_user
+    image: guacamole/guacamole
+    links:
+      - guacd
+    # ports:
+    #   - 7500:8080/tcp # Guacamole is on :8080/guacamole, not /.
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.guacamole.loadbalancer.server.port=8080"
+      - "traefik.http.services.guacamole.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.guacamole-http.entrypoints=web"
+      - "traefik.http.routers.guacamole-http.rule=Host(`guacamole.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.guacamole.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.guacamole-https.entrypoints=websecure"
+      - "traefik.http.routers.guacamole-https.rule=Host(`guacamole.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.guacamole.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.guacamole-https.tls=true"
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.37
+
+
+
+  # Crafty - Web-based Minecraft server manager.
+  #==============================================================================================================================
+  crafty:
+    container_name: hamada-crafty_container
+    image: registry.gitlab.com/crafty-controller/crafty-4:latest
+    restart: always
+    environment:
+      - TZ=Etc/UTC
+    ports:
+      # - "8000:8000" # HTTP
+      # - "8443:8443" # HTTPS
+      - "8123:8123" # DYNMAP
+      - "19132:19132/udp" # BEDROCK
+      - "25500-25600:25500-25600" # MC SERV PORT RANGE
+    volumes:
+      - ./crafty/backups:/crafty/backups
+      - ./crafty/logs:/crafty/logs
+      - ./crafty/servers:/crafty/servers
+      - ./crafty/config:/crafty/app/config
+      - ./crafty/import:/crafty/import
+    networks:
+      hamada-network:
+        ipv4_address: 10.10.10.38
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.crafty.loadbalancer.server.port=8000"
+      - "traefik.http.services.crafty.loadbalancer.server.scheme=http"
+      - "traefik.http.routers.crafty-http.entrypoints=web"
+      - "traefik.http.routers.crafty-http.rule=Host(`crafty.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.crafty.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.crafty-https.entrypoints=websecure"
+      - "traefik.http.routers.crafty-https.rule=Host(`crafty.${DOMAIN_NAME}`) || HostRegexp(`{subhost:[a-z]+}.crafty.${DOMAIN_NAME}`)"
+      - "traefik.http.routers.crafty-https.tls=true"
+
+
+
+
+# https://traefik-dashboard.hamada.local
+# https://grafana.hamada.local
+# https://sonarr.hamada.local
+# https://radarr.hamada.local
+# https://jellyfin.hamada.local
+# https://portainer.hamada.local
+# https://transmission.hamada.local
+# https://zabbix-server.hamada.local
+# https://zabbix-frontend.hamada.local
+# https://zabbix-reports.hamada.local
+# https://zapix.hamada.local
+# https://prowlarr.hamada.local
+# https://emby.hamada.local
+# https://qbittorrent.hamada.local
+# https://requestrr.hamada.local
+# https://plex.hamada.local
+# https://adguardhome-sync.hamada.local
+# https://guacamole.hamada.local
+# https://crafty.hamada.local

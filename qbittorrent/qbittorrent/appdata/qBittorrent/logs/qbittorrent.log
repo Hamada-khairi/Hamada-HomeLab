@@ -1,0 +1,140 @@
+(N) 2024-08-28T08:45:35 - qBittorrent v4.6.6 started
+(N) 2024-08-28T08:45:35 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T08:45:35 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T08:45:35 - Peer ID: "-qB4660-"
+(I) 2024-08-28T08:45:35 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T08:45:35 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T08:45:35 - Local Peer Discovery support: ON
+(I) 2024-08-28T08:45:35 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T08:45:35 - Anonymous mode: OFF
+(I) 2024-08-28T08:45:35 - Encryption support: ON
+(W) 2024-08-28T08:45:35 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2024-08-28T08:45:36 - Using built-in WebUI.
+(W) 2024-08-28T08:45:36 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T08:45:36 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T08:45:36 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T08:45:40 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(I) 2024-08-28T08:45:40 - Successfully updated IP geolocation database.
+(I) 2024-08-28T08:45:55 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T08:47:25 - qBittorrent termination initiated
+(N) 2024-08-28T08:47:25 - qBittorrent is now ready to exit
+(N) 2024-08-28T08:52:09 - qBittorrent v4.6.6 started
+(N) 2024-08-28T08:52:09 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T08:52:09 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T08:52:09 - Peer ID: "-qB4660-"
+(I) 2024-08-28T08:52:09 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T08:52:09 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T08:52:09 - Local Peer Discovery support: ON
+(I) 2024-08-28T08:52:09 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T08:52:09 - Anonymous mode: OFF
+(I) 2024-08-28T08:52:09 - Encryption support: ON
+(I) 2024-08-28T08:52:09 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(N) 2024-08-28T08:52:09 - Using built-in WebUI.
+(W) 2024-08-28T08:52:09 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T08:52:09 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T08:52:10 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T08:52:29 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T08:52:44 - qBittorrent termination initiated
+(N) 2024-08-28T08:52:44 - qBittorrent is now ready to exit
+(N) 2024-08-28T08:53:04 - qBittorrent v4.6.6 started
+(N) 2024-08-28T08:53:04 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T08:53:04 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T08:53:04 - Peer ID: "-qB4660-"
+(I) 2024-08-28T08:53:04 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T08:53:04 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T08:53:04 - Local Peer Discovery support: ON
+(I) 2024-08-28T08:53:04 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T08:53:04 - Anonymous mode: OFF
+(I) 2024-08-28T08:53:04 - Encryption support: ON
+(I) 2024-08-28T08:53:04 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(N) 2024-08-28T08:53:04 - Using built-in WebUI.
+(W) 2024-08-28T08:53:04 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T08:53:04 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T08:53:04 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T08:53:24 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T08:54:23 - qBittorrent termination initiated
+(N) 2024-08-28T08:54:23 - qBittorrent is now ready to exit
+(N) 2024-08-28T08:54:42 - qBittorrent v4.6.6 started
+(N) 2024-08-28T08:54:42 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T08:54:42 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T08:54:42 - Peer ID: "-qB4660-"
+(I) 2024-08-28T08:54:42 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T08:54:42 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T08:54:42 - Local Peer Discovery support: ON
+(I) 2024-08-28T08:54:42 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T08:54:42 - Anonymous mode: OFF
+(I) 2024-08-28T08:54:42 - Encryption support: ON
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T08:54:42 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T08:54:42 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(N) 2024-08-28T08:54:43 - Using built-in WebUI.
+(W) 2024-08-28T08:54:43 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T08:54:43 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T08:55:03 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T09:01:38 - qBittorrent termination initiated
+(N) 2024-08-28T09:01:38 - qBittorrent is now ready to exit
+(N) 2024-08-28T09:02:14 - qBittorrent v4.6.6 started
+(N) 2024-08-28T09:02:14 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T09:02:14 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T09:02:14 - Peer ID: "-qB4660-"
+(I) 2024-08-28T09:02:14 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T09:02:14 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T09:02:14 - Local Peer Discovery support: ON
+(I) 2024-08-28T09:02:14 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T09:02:14 - Anonymous mode: OFF
+(I) 2024-08-28T09:02:14 - Encryption support: ON
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T09:02:14 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T09:02:15 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(N) 2024-08-28T09:02:15 - Using built-in WebUI.
+(W) 2024-08-28T09:02:15 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T09:02:15 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T09:02:35 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T09:06:02 - qBittorrent termination initiated
+(N) 2024-08-28T09:06:03 - qBittorrent is now ready to exit
+(N) 2024-08-28T09:07:16 - qBittorrent v4.6.6 started
+(N) 2024-08-28T09:07:16 - Using config directory: /config/qBittorrent
+(N) 2024-08-28T09:07:16 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2024-08-28T09:07:16 - Peer ID: "-qB4660-"
+(I) 2024-08-28T09:07:16 - HTTP User-Agent: "qBittorrent/4.6.6"
+(I) 2024-08-28T09:07:16 - Distributed Hash Table (DHT) support: ON
+(I) 2024-08-28T09:07:16 - Local Peer Discovery support: ON
+(I) 2024-08-28T09:07:16 - Peer Exchange (PeX) support: ON
+(I) 2024-08-28T09:07:16 - Anonymous mode: OFF
+(I) 2024-08-28T09:07:16 - Encryption support: ON
+(I) 2024-08-28T09:07:16 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Aug 1 00:41:08 2024.
+(N) 2024-08-28T09:07:17 - Using built-in WebUI.
+(W) 2024-08-28T09:07:17 - Couldn't load WebUI translation for selected locale (C).
+(N) 2024-08-28T09:07:17 - WebUI: Now listening on IP: *, port: 8080
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "10.10.10.31". Port: "TCP/6881"
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "10.10.10.31". Port: "UTP/6881"
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2024-08-28T09:07:17 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2024-08-28T09:07:37 - Detected external IP. IP: "202.185.95.10"
+(N) 2024-08-28T09:09:47 - qBittorrent termination initiated
+(N) 2024-08-28T09:09:47 - qBittorrent is now ready to exit

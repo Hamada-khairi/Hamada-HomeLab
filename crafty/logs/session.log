@@ -1,0 +1,26 @@
+2024-08-28 09:07:25,704 - [Crafty] - INFO     - __main__ - ***** Crafty Controller Started *****
+2024-08-28 09:07:25,726 - [Crafty] - INFO     - app.classes.shared.migration - Starting migrations
+2024-08-28 09:07:25,745 - [Crafty] - INFO     - app.classes.shared.migration - There is nothing to migrate
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Cert File is set to: /crafty/app/config/web/certs/commander.cert.pem
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - SSL Key File is set to: /crafty/app/config/web/certs/commander.key.pem
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - __main__ - Initializing all servers defined
+2024-08-28 09:07:25,915 - [Crafty] - INFO     - app.classes.shared.helpers - Cert and Key files already exists, not creating them.
+2024-08-28 09:07:25,923 - [Crafty] - INFO     - app.classes.web.tornado_handler - Starting Web Server on ports https:8443
+2024-08-28 09:07:25,960 - [Crafty] - INFO     - app.classes.web.tornado_handler - https://10.10.10.38:8443 is up and ready for connections.
+2024-08-28 09:07:28,496 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:07:29,965 - [Crafty] - INFO     - __main__ - Checking Internet. This may take a minute.
+2024-08-28 09:07:31,971 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual bucket cache refresh initiated.
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - __main__ - Execution Mode: Non-interactive (e.g. 'python main.py')
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Checking Big Bucket status
+2024-08-28 09:07:31,972 - [Crafty] - INFO     - __main__ - Application path: '/crafty'
+2024-08-28 09:07:32,863 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:07:32,864 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file is not old enough to require automatic refresh.
+2024-08-28 09:07:36,316 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Big bucket is alive and responding as expected
+2024-08-28 09:07:40,798 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Cache file successfully refreshed manually.
+2024-08-28 09:07:40,799 - [Crafty] - INFO     - app.classes.minecraft.bigbucket - Manual refresh completed.
+2024-08-28 09:07:45,298 - [Crafty] - INFO     - __main__ - Removing old temp dirs
+2024-08-28 09:09:47,031 - [Crafty] - INFO     - __main__ - Recieved signal SIGTERM [15], stopping Crafty...
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Found 0 running server(s)
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - Stopping All Servers
+2024-08-28 09:09:47,033 - [Crafty] - INFO     - app.classes.controllers.servers_controller - All Servers Stopped
+2024-08-28 09:09:47,034 - [Crafty] - INFO     - app.classes.shared.command - Stopping all server daemons / threads

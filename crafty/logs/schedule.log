@@ -1,0 +1,262 @@
+2024-08-28 08:45:53,972 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:45:53,974 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:45:53,976 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 08:45:55,995 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 08:45:56,502 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:45:56,503 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 08:45:56,504 - [Schedules] - INFO - Launching command thread...
+2024-08-28 08:45:56,504 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 08:45:56,505 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 08:45:56,505 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 08:45:56,508 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:45:56,509 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 08:45:56,510 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 08:45:56,510 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:45:56,510 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 08:46:01,290 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 08:46:01,290 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 08:46:06,048 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 08:46:06,048 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 08:46:06,049 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 08:46:06,049 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:46:26 UTC)
+2024-08-28 08:46:06,049 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 08:51:06 UTC)
+2024-08-28 08:46:06,049 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 14:45:56 UTC)
+2024-08-28 08:46:06,049 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 20:46:06 UTC)
+2024-08-28 08:46:09,601 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 08:46:09,601 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 08:46:26,503 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:46:56 UTC)" (scheduled at 2024-08-28 08:46:26.502799+00:00)
+2024-08-28 08:46:27,008 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:46:56 UTC)" executed successfully
+2024-08-28 08:46:27,009 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:46:56,503 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:47:26 UTC)" (scheduled at 2024-08-28 08:46:56.502799+00:00)
+2024-08-28 08:46:57,009 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:47:26 UTC)" executed successfully
+2024-08-28 08:46:57,009 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:47:25,615 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
+2024-08-28 08:52:19,393 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:52:19,395 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:52:19,397 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 08:52:21,428 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 08:52:21,935 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:52:21,935 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 08:52:21,936 - [Schedules] - INFO - Launching command thread...
+2024-08-28 08:52:21,937 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 08:52:21,938 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 08:52:21,938 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 08:52:21,950 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:52:21,960 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 08:52:21,961 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 08:52:21,961 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:52:21,968 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 08:52:26,282 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 08:52:26,282 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 08:52:26,427 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 08:52:26,427 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 08:52:31,180 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 08:52:31,181 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 08:52:31,181 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 08:52:31,181 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:52:51 UTC)
+2024-08-28 08:52:31,181 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 08:57:31 UTC)
+2024-08-28 08:52:31,181 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 14:52:21 UTC)
+2024-08-28 08:52:31,181 - [Schedules] - INFO - JOB: BigBucket.refresh_cache (trigger: interval[12:00:00], next run at: 2024-08-28 20:52:26 UTC)
+2024-08-28 08:52:31,181 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 20:52:31 UTC)
+2024-08-28 08:52:44,099 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
+2024-08-28 08:53:11,219 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:53:11,227 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:53:11,229 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 08:53:13,285 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 08:53:13,792 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:53:13,792 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 08:53:13,795 - [Schedules] - INFO - Launching command thread...
+2024-08-28 08:53:13,796 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 08:53:13,797 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:53:13,797 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 08:53:13,798 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 08:53:13,801 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 08:53:13,805 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 08:53:13,822 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 08:53:18,180 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 08:53:18,181 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 08:53:18,263 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 08:53:18,263 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 08:53:23,510 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 08:53:23,511 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 08:53:23,512 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 08:53:23,512 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:53:43 UTC)
+2024-08-28 08:53:23,512 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 08:58:23 UTC)
+2024-08-28 08:53:23,513 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 14:53:13 UTC)
+2024-08-28 08:53:23,514 - [Schedules] - INFO - JOB: BigBucket.refresh_cache (trigger: interval[12:00:00], next run at: 2024-08-28 20:53:18 UTC)
+2024-08-28 08:53:23,514 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 20:53:23 UTC)
+2024-08-28 08:53:43,793 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:54:13 UTC)" (scheduled at 2024-08-28 08:53:43.792057+00:00)
+2024-08-28 08:53:44,298 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:54:13 UTC)" executed successfully
+2024-08-28 08:53:44,299 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:54:13,793 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:54:43 UTC)" (scheduled at 2024-08-28 08:54:13.792057+00:00)
+2024-08-28 08:54:14,298 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:54:43 UTC)" executed successfully
+2024-08-28 08:54:14,298 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:54:23,775 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
+2024-08-28 08:54:51,476 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:54:51,492 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:54:51,513 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 08:54:53,582 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 08:54:54,097 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 08:54:54,097 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 08:54:54,100 - [Schedules] - INFO - Launching command thread...
+2024-08-28 08:54:54,101 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 08:54:54,101 - [Schedules] - INFO - Scheduler started
+2024-08-28 08:54:54,101 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 08:54:54,106 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 08:54:54,109 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 08:54:54,109 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 08:54:54,125 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 08:54:58,537 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 08:54:58,537 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 08:54:58,694 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 08:54:58,694 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 08:55:03,804 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 08:55:03,805 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 08:55:03,805 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 08:55:03,805 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:55:24 UTC)
+2024-08-28 08:55:03,805 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 09:00:03 UTC)
+2024-08-28 08:55:03,806 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 14:54:54 UTC)
+2024-08-28 08:55:03,806 - [Schedules] - INFO - JOB: BigBucket.refresh_cache (trigger: interval[12:00:00], next run at: 2024-08-28 20:54:58 UTC)
+2024-08-28 08:55:03,806 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 20:55:03 UTC)
+2024-08-28 08:55:24,098 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:55:54 UTC)" (scheduled at 2024-08-28 08:55:24.097148+00:00)
+2024-08-28 08:55:24,603 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:55:54 UTC)" executed successfully
+2024-08-28 08:55:24,603 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:55:54,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:56:24 UTC)" (scheduled at 2024-08-28 08:55:54.097148+00:00)
+2024-08-28 08:55:54,602 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:56:24 UTC)" executed successfully
+2024-08-28 08:55:54,603 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:56:24,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:56:54 UTC)" (scheduled at 2024-08-28 08:56:24.097148+00:00)
+2024-08-28 08:56:24,603 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:56:54 UTC)" executed successfully
+2024-08-28 08:56:24,603 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:56:54,098 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:57:24 UTC)" (scheduled at 2024-08-28 08:56:54.097148+00:00)
+2024-08-28 08:56:54,604 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:57:24 UTC)" executed successfully
+2024-08-28 08:56:54,604 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:57:24,098 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:57:54 UTC)" (scheduled at 2024-08-28 08:57:24.097148+00:00)
+2024-08-28 08:57:24,602 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:57:54 UTC)" executed successfully
+2024-08-28 08:57:24,603 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:57:54,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:58:24 UTC)" (scheduled at 2024-08-28 08:57:54.097148+00:00)
+2024-08-28 08:57:54,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:58:24 UTC)" executed successfully
+2024-08-28 08:57:54,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:58:24,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:58:54 UTC)" (scheduled at 2024-08-28 08:58:24.097148+00:00)
+2024-08-28 08:58:24,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:58:54 UTC)" executed successfully
+2024-08-28 08:58:24,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:58:54,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:59:24 UTC)" (scheduled at 2024-08-28 08:58:54.097148+00:00)
+2024-08-28 08:58:54,602 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:59:24 UTC)" executed successfully
+2024-08-28 08:58:54,602 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:59:24,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:59:54 UTC)" (scheduled at 2024-08-28 08:59:24.097148+00:00)
+2024-08-28 08:59:24,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 08:59:54 UTC)" executed successfully
+2024-08-28 08:59:24,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 08:59:54,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:00:24 UTC)" (scheduled at 2024-08-28 08:59:54.097148+00:00)
+2024-08-28 08:59:54,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:00:24 UTC)" executed successfully
+2024-08-28 08:59:54,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:00:03,805 - [Schedules] - INFO - Running job "Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 09:05:03 UTC)" (scheduled at 2024-08-28 09:00:03.804747+00:00)
+2024-08-28 09:00:03,805 - [Schedules] - INFO - Job "Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 09:05:03 UTC)" executed successfully
+2024-08-28 09:00:03,806 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:00:24,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:00:54 UTC)" (scheduled at 2024-08-28 09:00:24.097148+00:00)
+2024-08-28 09:00:24,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:00:54 UTC)" executed successfully
+2024-08-28 09:00:24,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:00:54,097 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:01:24 UTC)" (scheduled at 2024-08-28 09:00:54.097148+00:00)
+2024-08-28 09:00:54,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:01:24 UTC)" executed successfully
+2024-08-28 09:00:54,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:01:24,098 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:01:54 UTC)" (scheduled at 2024-08-28 09:01:24.097148+00:00)
+2024-08-28 09:01:24,601 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:01:54 UTC)" executed successfully
+2024-08-28 09:01:24,601 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:01:38,068 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
+2024-08-28 09:02:26,016 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:02:26,034 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:02:26,037 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 09:02:28,089 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 09:02:28,597 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 09:02:28,597 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 09:02:28,599 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 09:02:28,600 - [Schedules] - INFO - Launching command thread...
+2024-08-28 09:02:28,600 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:02:28,601 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 09:02:28,601 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 09:02:28,607 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 09:02:28,614 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 09:02:28,614 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 09:02:32,981 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 09:02:32,982 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 09:02:33,158 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 09:02:33,158 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 09:02:37,918 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 09:02:37,918 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 09:02:37,918 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 09:02:37,918 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:02:58 UTC)
+2024-08-28 09:02:37,919 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 09:07:37 UTC)
+2024-08-28 09:02:37,919 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 15:02:28 UTC)
+2024-08-28 09:02:37,919 - [Schedules] - INFO - JOB: BigBucket.refresh_cache (trigger: interval[12:00:00], next run at: 2024-08-28 21:02:32 UTC)
+2024-08-28 09:02:37,919 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 21:02:37 UTC)
+2024-08-28 09:02:58,598 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:03:28 UTC)" (scheduled at 2024-08-28 09:02:58.597266+00:00)
+2024-08-28 09:02:59,103 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:03:28 UTC)" executed successfully
+2024-08-28 09:02:59,103 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:03:28,597 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:03:58 UTC)" (scheduled at 2024-08-28 09:03:28.597266+00:00)
+2024-08-28 09:03:29,102 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:03:58 UTC)" executed successfully
+2024-08-28 09:03:29,102 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:03:58,599 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:04:28 UTC)" (scheduled at 2024-08-28 09:03:58.597266+00:00)
+2024-08-28 09:03:59,102 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:04:28 UTC)" executed successfully
+2024-08-28 09:03:59,103 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:04:28,598 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:04:58 UTC)" (scheduled at 2024-08-28 09:04:28.597266+00:00)
+2024-08-28 09:04:29,103 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:04:58 UTC)" executed successfully
+2024-08-28 09:04:29,103 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:04:58,598 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:05:28 UTC)" (scheduled at 2024-08-28 09:04:58.597266+00:00)
+2024-08-28 09:04:59,103 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:05:28 UTC)" executed successfully
+2024-08-28 09:04:59,103 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:05:28,598 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:05:58 UTC)" (scheduled at 2024-08-28 09:05:28.597266+00:00)
+2024-08-28 09:05:29,102 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:05:58 UTC)" executed successfully
+2024-08-28 09:05:29,102 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:05:58,597 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:06:28 UTC)" (scheduled at 2024-08-28 09:05:58.597266+00:00)
+2024-08-28 09:05:59,103 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:06:28 UTC)" executed successfully
+2024-08-28 09:05:59,103 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:06:03,083 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
+2024-08-28 09:07:25,889 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:07:25,892 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:07:25,897 - [Schedules] - INFO - Reload from DB called. Current enabled schedules: 
+2024-08-28 09:07:27,964 - [Schedules] - INFO - Stats collection frequency set to 30 seconds
+2024-08-28 09:07:28,474 - [Schedules] - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-28 09:07:28,474 - [Schedules] - INFO - Launching Scheduler Thread...
+2024-08-28 09:07:28,476 - [Schedules] - INFO - Added job "Stats.record_stats" to job store "default"
+2024-08-28 09:07:28,477 - [Schedules] - INFO - Scheduler started
+2024-08-28 09:07:28,477 - [Schedules] - INFO - Launching command thread...
+2024-08-28 09:07:28,485 - [Schedules] - INFO - Checking for Crafty updates...
+2024-08-28 09:07:28,487 - [Schedules] - INFO - Launching log watcher...
+2024-08-28 09:07:28,491 - [Schedules] - INFO - Added job "TasksManager.check_for_old_logs" to job store "default"
+2024-08-28 09:07:28,495 - [Schedules] - INFO - Launching realtime thread...
+2024-08-28 09:07:28,496 - [Schedules] - INFO - Refreshing big bucket cache on start
+2024-08-28 09:07:32,866 - [Schedules] - INFO - Scheduling big bucket cache refresh service every 12 hours
+2024-08-28 09:07:32,867 - [Schedules] - INFO - Added job "BigBucket.refresh_cache" to job store "default"
+2024-08-28 09:07:33,036 - [Schedules] - INFO - No updates found! You are on the most up to date Crafty version.
+2024-08-28 09:07:33,036 - [Schedules] - INFO - Refreshing Gravatar PFPs...
+2024-08-28 09:07:38,057 - [Schedules] - INFO - Added job "TasksManager.check_for_updates" to job store "default"
+2024-08-28 09:07:38,058 - [Schedules] - INFO - Added job "Controller.write_auth_tracker" to job store "default"
+2024-08-28 09:07:38,060 - [Schedules] - INFO - Loaded schedules. Current enabled schedules: 
+2024-08-28 09:07:38,060 - [Schedules] - INFO - JOB: Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:07:58 UTC)
+2024-08-28 09:07:38,061 - [Schedules] - INFO - JOB: Controller.write_auth_tracker (trigger: interval[0:05:00], next run at: 2024-08-28 09:12:38 UTC)
+2024-08-28 09:07:38,062 - [Schedules] - INFO - JOB: TasksManager.check_for_old_logs (trigger: interval[6:00:00], next run at: 2024-08-28 15:07:28 UTC)
+2024-08-28 09:07:38,062 - [Schedules] - INFO - JOB: BigBucket.refresh_cache (trigger: interval[12:00:00], next run at: 2024-08-28 21:07:32 UTC)
+2024-08-28 09:07:38,062 - [Schedules] - INFO - JOB: TasksManager.check_for_updates (trigger: interval[12:00:00], next run at: 2024-08-28 21:07:38 UTC)
+2024-08-28 09:07:58,474 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:08:28 UTC)" (scheduled at 2024-08-28 09:07:58.474242+00:00)
+2024-08-28 09:07:58,980 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:08:28 UTC)" executed successfully
+2024-08-28 09:07:58,981 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:08:28,475 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:08:58 UTC)" (scheduled at 2024-08-28 09:08:28.474242+00:00)
+2024-08-28 09:08:28,981 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:08:58 UTC)" executed successfully
+2024-08-28 09:08:28,981 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:08:58,475 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:09:28 UTC)" (scheduled at 2024-08-28 09:08:58.474242+00:00)
+2024-08-28 09:08:58,979 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:09:28 UTC)" executed successfully
+2024-08-28 09:08:58,979 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:09:28,475 - [Schedules] - INFO - Running job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:09:58 UTC)" (scheduled at 2024-08-28 09:09:28.474242+00:00)
+2024-08-28 09:09:28,980 - [Schedules] - INFO - Job "Stats.record_stats (trigger: interval[0:00:30], next run at: 2024-08-28 09:09:58 UTC)" executed successfully
+2024-08-28 09:09:28,980 - [Schedules] - INFO - Event job ID is not numerical. Assuming it's stats - not stored in DB. Moving on.
+2024-08-28 09:09:47,034 - [Schedules] - INFO - ***** Crafty Shutting Down *****
+
+
